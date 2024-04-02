@@ -1,0 +1,16 @@
+@use "_colors" as colors;
+
+@font-face {
+  font-family: "Bombardier";
+  src: url(/assets/fonts/Bombardier.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Bombardier";
+  font-size: 1em;
+  font-weight: 500;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
