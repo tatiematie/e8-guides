@@ -30,7 +30,6 @@
   border: 4px solid #1d2428;
   margin-top: 10px;
   min-height: 100px;
-  padding: 6px;
 }
 
 .corners {
@@ -47,6 +46,34 @@
   position: absolute;
   top: -4px;
   width: calc(100% + 8px);
+}
+
+.item {
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.item.common {
+  background-image: url(../assets/images/treatments/common.png);
+}
+.item.uncommon {
+  background-image: url(../assets/images/treatments/uncommon.png);
+}
+.item.legendary {
+  background-image: url(../assets/images/treatments/legendary.png);
+}
+.item.boss, .item.stage {
+  background-image: url(../assets/images/treatments/boss.png);
+}
+.item.void {
+  background-image: url(../assets/images/treatments/void.png);
+}
+.item.lunar {
+  background-image: url(../assets/images/treatments/lunar.png);
+}
+.item.equipment, .item.aspect {
+  background-image: url(../assets/images/treatments/equipment.png);
 }
 
 body {
@@ -94,67 +121,44 @@ body p {
   display: grid;
   gap: 6px;
   grid-template-columns: repeat(6, 48px);
+  max-height: 234px;
+  overflow-y: auto;
+  padding: 6px;
+  scrollbar-width: none;
 }
 #select #item-select li {
+  border: 1px solid #919193;
   height: 48px;
   position: relative;
+  z-index: 100;
 }
-#select #item-select li input {
+#select #item-select li button {
+  border: none;
   height: 100%;
-  visibility: hidden;
   width: 100%;
 }
-#select #item-select li input:checked + label {
-  border: 2px solid #ffffff;
-}
-#select #item-select li input:hover {
-  cursor: pointer;
-}
-#select #item-select li label {
-  height: 100%;
-  left: 0;
-  position: absolute;
-  width: 48px;
-}
-#select #item-select li label img {
+#select #item-select li button img {
   left: 50%;
+  pointer-events: none;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  width: 43.2px;
+  width: 85%;
 }
-#select #item-select li label.item {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#select #item-select li label.item.common {
-  background-image: url(../assets/images/treatments/common.png);
-}
-#select #item-select li label.item.uncommon {
-  background-image: url(../assets/images/treatments/uncommon.png);
-}
-#select #item-select li label:not(.checked):hover {
-  outline: 2px solid white;
-  outline-offset: 2px;
+#select #item-select li::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
+  left: -3px;
+  top: -3px;
+  display: none;
+  outline: 2px solid #f1e488;
+  z-index: 100;
 }
 #select #item-select li:hover::after {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   display: block;
-  width: calc(100% + 2px);
-  height: calc(100% + 2px);
-  background-color: #ffffff;
-  opacity: 0.25;
-  z-index: 100;
-  content: "";
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  pointer-events: none;
 }/*# sourceMappingURL=style.css.map */
