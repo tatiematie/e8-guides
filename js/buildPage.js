@@ -19,7 +19,7 @@ const newItemSelector = (key, values) => {
         newImg = document.createElement("img")
 
     // set up list elements
-    newImg.src = `../assets/images/items/${keyToID(key)}.png`
+    newImg.src = `assets/images/items/${keyToID(key)}.png`
     newButton.appendChild(newImg)
 
     newButton.type = "button"
