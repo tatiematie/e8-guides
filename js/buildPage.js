@@ -1,3 +1,9 @@
+import setCookies from "./setCookies.js"
+import keyToID from "./keyToID.js"
+import updatePage from "./updatePage.js"
+
+const itemSelectList = document.querySelector("#item-select")
+
 // page builder
 const buildPage = () => {
     Object.entries(itemData).forEach(([key, values]) => {
@@ -7,36 +13,29 @@ const buildPage = () => {
 
 // list item builder
 const newItemSelector = (key, values) => {
-    const itemSelectList = document.querySelector("#item-select")
-
+    // create elements
     const newListItem = document.createElement("li"),
-        newInput = document.createElement("input"),
-        newLabel = document.createElement("label"),
+        newButton = document.createElement("button"),
         newImg = document.createElement("img")
 
-    // simplify item names
-    let itemKey = key.replace(/ /g, '-').replace(/'/g, '').replace(/\./g, '-').toLowerCase()
+    // set up list elements
+    newImg.src = `../assets/images/items/${keyToID(key)}.png`
+    newButton.appendChild(newImg)
 
-    newInput.id = itemKey
-    newInput.name = "itemSelect"
-    newInput.type = "radio"
-    newInput.addEventListener("click", () => clickHandler(itemKey))
-    newListItem.appendChild(newInput)
+    newButton.type = "button"
+    newButton.classList.add(values.rarity.toLowerCase())
+    newButton.classList.add("item")
+    newButton.title = key
+    newListItem.appendChild(newButton)
 
-    newImg.src = `../assets/images/items/${itemKey}.png`
+    // adding click listener
+    newListItem.addEventListener("click", (event) => {
+        setCookies(key, keyToID(key))
+        updatePage()
+    })
 
-    newLabel.setAttribute("for", itemKey)
-    newLabel.classList.add(values.rarity.toLowerCase())
-    newLabel.classList.add("item")
-    newLabel.appendChild(newImg)
-    newListItem.appendChild(newLabel)
-   
+    // add button to list
     itemSelectList.appendChild(newListItem)
-}
-
-// item selection click listener
-const clickHandler = (key) => {
-    window.location.hash = key
 }
 
 export default buildPage
