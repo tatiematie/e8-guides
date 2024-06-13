@@ -11,7 +11,7 @@ const loadFile = async (filetype, filepath) => {
 }
 
 // load item list and save as global variable
-const itemData =  await loadFile("json", "../data/items.json")
+const itemData =  await loadFile("json", "data/items.json")
 window.itemData = itemData
 
 const loadPage = async () => {
