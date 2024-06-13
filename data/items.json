@@ -83,6 +83,9 @@
     "Rusted Key": {
         "rarity": "Common"
     },
+    "Warbanner": {
+        "rarity": "Common"
+    },
     "Predatory Instincts": {
         "rarity": "Uncommon"
     },
@@ -169,5 +172,320 @@
     },
     "Berzerker's Pauldron": {
         "rarity": "Uncommon"
+    },
+    "Alien Head": {
+        "rarity": "Legendary"
+    },
+    "Aegis": {
+        "rarity": "Legendary"
+    },
+    "Brilliant Behemoth": {
+        "rarity": "Legendary"
+    },
+    "Sentient Meat Hook": {
+        "rarity": "Legendary"
+    },
+    "Defensive Microbots": {
+        "rarity": "Legendary"
+    },
+    "57 Leaf Clover": {
+        "rarity": "Legendary"
+    },
+    "Laser Scope": {
+        "rarity": "Legendary"
+    },
+    "Ceremonial Dagger": {
+        "rarity": "Legendary"
+    },
+    "Spare Drone Parts": {
+        "rarity": "Legendary"
+    },
+    "Dio's Best Friend": {
+        "rarity": "Legendary"
+    },
+    "H3AD-5T v2": {
+        "rarity": "Legendary"
+    },
+    "Happiest Mask": {
+        "rarity": "Legendary"
+    },
+    "Wake of Vultures": {
+        "rarity": "Legendary"
+    },
+    "Frost Relic": {
+        "rarity": "Legendary"
+    },
+    "Ben's Rain Coat": {
+        "rarity": "Legendary"
+    },
+    "Rejuvination Rack": {
+        "rarity": "Legendary"
+    },
+    "Brainstalks": {
+        "rarity": "Legendary"
+    },
+    "Resonance Disc": {
+        "rarity": "Legendary"
+    },
+    "Pocket I.C.B.M.": {
+        "rarity": "Legendary"
+    },
+    "N'kuhana's Opinion": {
+        "rarity": "Legendary"
+    },
+    "Symbiotic Scorpion": {
+        "rarity": "Legendary"
+    },
+    "Interstellar Desk Plant": {
+        "rarity": "Legendary"
+    },
+    "Bottled Chaos": {
+        "rarity": "Legendary"
+    },
+    "Unstable Tesla Coil": {
+        "rarity": "Legendary"
+    },
+    "Soulbound Catalyst": {
+        "rarity": "Legendary"
+    },
+    "Hardlight Afterburner": {
+        "rarity": "Legendary"
+    },
+    "Queen's Gland": {
+        "rarity": "Boss"
+    },
+    "Shatterspleen": {
+        "rarity": "Boss"
+    },
+    "Molten Perforator": {
+        "rarity": "Boss"
+    },
+    "Titanic Knurl": {
+        "rarity": "Boss"
+    },
+    "Charged Perforator": {
+        "rarity": "Boss"
+    },
+    "Defense Nucleus": {
+        "rarity": "Boss"
+    },
+    "Genesis Loop": {
+        "rarity": "Boss"
+    },
+    "Planula": {
+        "rarity": "Boss"
+    },
+    "Pearl": {
+        "rarity": "Stage"
+    },
+    "Empathy Cores": {
+        "rarity": "Boss"
+    },
+    "Irradiant Pearl": {
+        "rarity": "Stage"
+    },
+    "Mired Urn": {
+        "rarity": "Boss"
+    },
+    "Safer Spaces": {
+        "rarity": "Void"
+    },
+    "Needletick": {
+        "rarity": "Void"
+    },
+    "Lost Seer's Lenses": {
+        "rarity": "Void"
+    },
+    "Weeping Fungus": {
+        "rarity": "Void"
+    },
+    "Encrusted Key": {
+        "rarity": "Void"
+    },
+    "Polylute": {
+        "rarity": "Void"
+    },
+    "Singularity Band": {
+        "rarity": "Void"
+    },
+    "Lysate Cell": {
+        "rarity": "Void"
+    },
+    "Voidsent Flame": {
+        "rarity": "Void"
+    },
+    "Plasma Shrimp": {
+        "rarity": "Void"
+    },
+    "Tentabauble": {
+        "rarity": "Void"
+    },
+    "Benthic Bloom": {
+        "rarity": "Void"
+    },
+    "Pluripotent Larva": {
+        "rarity": "Void"
+    },
+    "Gesture of the Drowned": {
+        "rarity": "Lunar"
+    },
+    "Focused Convergence": {
+        "rarity": "Lunar"
+    },
+    "Brittle Crown": {
+        "rarity": "Lunar"
+    },
+    "Light Flux Pauldron": {
+        "rarity": "Lunar"
+    },
+    "Stone Flux Pauldron": {
+        "rarity": "Lunar"
+    },
+    "Purity": {
+        "rarity": "Lunar"
+    },
+    "Shaped Glass": {
+        "rarity": "Lunar"
+    },
+    "Visions of Heresy": {
+        "rarity": "Lunar"
+    },
+    "Hooks of Heresy": {
+        "rarity": "Lunar"
+    },
+    "Essence of Heresy": {
+        "rarity": "Lunar"
+    },
+    "Egocentricism": {
+        "rarity": "Lunar"
+    },
+    "Beads of Fealty": {
+        "rarity": "Lunar"
+    },
+    "Strides of Heresy": {
+        "rarity": "Lunar"
+    },
+    "Defiant Gouge": {
+        "rarity": "Lunar"
+    },
+    "Mercurial Rachis": {
+        "rarity": "Lunar"
+    },
+    "Eulogy Zero": {
+        "rarity": "Lunar"
+    },
+    "Corpsebloom": {
+        "rarity": "Lunar"
+    },
+    "Transcendence": {
+        "rarity": "Lunar"
+    },
+    "Helfire Tincture": {
+        "rarity": "Lunar"
+    },
+    "Effigy of Grief": {
+        "rarity": "Lunar"
+    },
+    "Glowing Meteorite": {
+        "rarity": "Lunar"
+    },
+    "Spinel Tonic": {
+        "rarity": "Lunar"
+    },
+    "Preon Accumulator": {
+        "rarity": "Equipment"
+    },
+    "Primordial Cube": {
+        "rarity": "Equipment"
+    },
+    "Trophy Hunter's Tricorn": {
+        "rarity": "Equipment"
+    },
+    "Blast Shower": {
+        "rarity": "Equipment"
+    },
+    "Disposable Missile Launcher": {
+        "rarity": "Equipment"
+    },
+    "Ocular HUD": {
+        "rarity": "Equipment"
+    },
+    "Forgive Me Please": {
+        "rarity": "Equipment"
+    },
+    "The Backup": {
+        "rarity": "Equipment"
+    },
+    "Volcanic Egg": {
+        "rarity": "Equipment"
+    },
+    "Foreign Fruit": {
+        "rarity": "Equipment"
+    },
+    "Jade Elephant": {
+        "rarity": "Equipment"
+    },
+    "Eccentric Vase": {
+        "rarity": "Equipment"
+    },
+    "The Crowdfunder": {
+        "rarity": "Equipment"
+    },
+    "Goobo Jr.": {
+        "rarity": "Equipment"
+    },
+    "Milky Chrysalis": {
+        "rarity": "Equipment"
+    },
+    "Super Massive Leech": {
+        "rarity": "Equipment"
+    },
+    "Royal Capacitor": {
+        "rarity": "Equipment"
+    },
+    "Molotov 6-Pack": {
+        "rarity": "Equipment"
+    },
+    "Executive Card": {
+        "rarity": "Equipment"
+    },
+    "Gnarled Woodsprite": {
+        "rarity": "Equipment"
+    },
+    "Recycler": {
+        "rarity": "Equipment"
+    },
+    "Sawmerang": {
+        "rarity": "Equipment"
+    },
+    "Radar Scanner": {
+        "rarity": "Equipment"
+    },
+    "Gorag's Opus": {
+        "rarity": "Equipment"
+    },
+    "Fuel Array": {
+        "rarity": "Equipment"
+    },
+    "Ifrit's Distinction": {
+        "rarity": "Aspect"
+    },
+    "His Reassurance": {
+        "rarity": "Aspect"
+    },
+    "Silence Between Two Strikes": {
+        "rarity": "Aspect"
+    },
+    "Her Biting Embrace": {
+        "rarity": "Aspect"
+    },
+    "N'kuhana's Retort": {
+        "rarity": "Aspect"
+    },
+    "Spectral Circlet": {
+        "rarity": "Aspect"
+    },
+    "Shared Design": {
+        "rarity": "Aspect"
     }
 }
