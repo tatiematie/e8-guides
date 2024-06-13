@@ -17,7 +17,7 @@ const updatePage = () => {
     newFavico.id = "favico"
     newFavico.rel = "icon"
     newFavico.type = "image/x-icon"
-    newFavico.href = `/assets/images/items/${keyToID(getCookies("lastViewed"))}.png`
+    newFavico.href = `assets/images/items/${keyToID(getCookies("lastViewed"))}.png`
 
     favico ? document.head.removeChild(favico) : null
     document.head.appendChild(newFavico)
