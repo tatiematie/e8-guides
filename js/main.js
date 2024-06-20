@@ -2,36 +2,25 @@ import buildPage from "./buildPage.js"
 import getCookie from "./getCookies.js"
 import keyToID from "./keyToID.js"
 import updatePage from "./updatePage.js"
-
-// json loader
-const loadFile = async (filetype, filepath) => {
-    if (filetype == "json") {
-        return (await fetch(filepath)).json()
-    } 
-}
-
-// load item list and save as global variable
-const itemData =  await loadFile("json", "data/items.json")
-window.itemData = itemData
+import { loadData } from "./loadFile.js"
 
 const loadPage = async () => {
+  // import item data and save to global variable
+    const itemData =  await loadData("data/items.json")
+    window.itemData = itemData
+
     const itemSelectList = document.querySelector("#item-select")
 
-    // page builder pre-load
     buildPage()
 
-    // get cookies and set last viewed item as current or set default as viewed
-    if (getCookie("lastViewed") === null) {
-        itemSelectList.firstChild.click()
+    // check for saved cookies, if they exist then load, otherwise set first item as default
+    if (!getCookie("lastViewed")) {
+      itemSelectList.childNodes[0].click()
     } else {
-        updatePage()
+      window.location.hash = getCookie("lastViewed")
+      
+      updatePage(getCookie("lastViewed"))
     }
-
-    window.addEventListener("hashchange", () => {
-        if (!Object.keys(itemData).includes(window.location.hash.substring(1))) {
-            window.location.hash = keyToID(getCookie("lastViewed"))
-        }
-    })
 }   
 
 loadPage()
