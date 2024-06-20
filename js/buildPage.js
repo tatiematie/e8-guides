@@ -4,21 +4,19 @@ import updatePage from "./updatePage.js"
 
 const itemSelectList = document.querySelector("#item-select")
 
-// page builder
+// import data to build page on load
 const buildPage = () => {
     Object.entries(itemData).forEach(([key, values]) => {
         newItemSelector(key, values)
     })
 }
 
-// list item builder
+// create/append item select list
 const newItemSelector = (key, values) => {
-    // create elements
     const newListItem = document.createElement("li"),
         newButton = document.createElement("button"),
         newImg = document.createElement("img")
 
-    // set up list elements
     newImg.src = `assets/images/items/${keyToID(key)}.png`
     newButton.appendChild(newImg)
 
@@ -28,13 +26,11 @@ const newItemSelector = (key, values) => {
     newButton.title = key
     newListItem.appendChild(newButton)
 
-    // adding click listener
+    // add click listener
     newListItem.addEventListener("click", (event) => {
-        setCookies(key, keyToID(key))
-        updatePage()
+        updatePage(key)
     })
 
-    // add button to list
     itemSelectList.appendChild(newListItem)
 }
 
