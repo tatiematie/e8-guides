@@ -11,10 +11,12 @@
   margin: 0;
   padding: 0;
 }
+* img {
+  display: block;
+}
 
 .panel {
   background-color: #40505d;
-  border: 4px solid #919193;
   padding: 8px;
 }
 .panel .heading h2 {
@@ -25,15 +27,15 @@
   color: #9a9897;
   font-size: 1.125em;
 }
-.panel .section {
+.panel .content {
   background-color: #242e38;
   border: 4px solid #1d2428;
   margin-top: 10px;
-  min-height: 100px;
 }
 
 .corners {
   position: relative;
+  border: 4px solid #919193;
 }
 .corners::after {
   background-image: url(../assets/images/treatments/corners.svg), url(../assets/images/treatments/corners.svg), url(../assets/images/treatments/corners.svg), url(../assets/images/treatments/corners.svg);
@@ -113,6 +115,21 @@ body p {
 #display {
   flex-grow: 1;
 }
+#display #current-page .heading {
+  align-items: center;
+  display: flex;
+}
+#display #current-page .heading .corners {
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-right: 12px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#display #current-page .heading .corners img {
+  padding: 4px;
+  width: 64px;
+}
 
 #select {
   width: 362px;
@@ -147,6 +164,9 @@ body p {
      -moz-user-select: none;
           user-select: none;
   width: 85%;
+}
+#select #item-select li button:hover {
+  cursor: pointer;
 }
 #select #item-select li::after {
   content: "";
