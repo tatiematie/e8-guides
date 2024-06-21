@@ -1,7 +1,6 @@
 import keyToID from "./keyToID.js"
 import updatePage from "./updatePage.js"
-
-const itemSelectList = document.querySelector("#item-select")
+import { getCookie, setCookie } from "./cookieHandling.js"
 
 // import data to build page on load
 const buildPage = () => {
@@ -23,10 +22,11 @@ const newItemSelector = (key, values) => {
     newButton.classList.add(values.rarity.toLowerCase())
     newButton.classList.add("item")
     newButton.title = key
+    // newButton.id = keyToID(key)
     newListItem.appendChild(newButton)
 
     // add click listener
-    newListItem.addEventListener("click", (event) => {
+    newListItem.addEventListener("click", event => {
         updatePage(key)
     })
 
