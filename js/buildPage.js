@@ -1,4 +1,3 @@
-import setCookies from "./setCookies.js"
 import keyToID from "./keyToID.js"
 import updatePage from "./updatePage.js"
 

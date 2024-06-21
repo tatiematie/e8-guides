@@ -1,6 +1,5 @@
 import buildPage from "./buildPage.js"
 import getCookie from "./getCookies.js"
-import keyToID from "./keyToID.js"
 import updatePage from "./updatePage.js"
 import { loadData } from "./loadFile.js"
 
