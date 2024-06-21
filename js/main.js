@@ -21,6 +21,10 @@ const loadPage = async () => {
       
       updatePage(getCookie("lastViewed"))
     }
+
+    document.addEventListener('contextmenu', (event) => {
+      event.preventDefault()
+  })
 }   
 
 loadPage()
