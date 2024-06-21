@@ -170,6 +170,21 @@ body p {
 #select #item-select li button:hover {
   cursor: pointer;
 }
+#select #item-select li#active-button {
+  border-color: white;
+}
+#select #item-select li#active-button::before {
+  display: block;
+}
+#select #item-select li::before {
+  background-color: rgba(255, 255, 255, 0.2509803922);
+  content: "";
+  display: none;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+}
 #select #item-select li::after {
   content: "";
   position: absolute;
@@ -180,7 +195,8 @@ body p {
   display: none;
   outline: 2px solid #f1e488;
   z-index: 100;
+  pointer-events: none;
 }
-#select #item-select li:hover::after {
+#select #item-select li:hover:not(#active-button)::after {
   display: block;
 }/*# sourceMappingURL=style.css.map */

@@ -208,6 +208,24 @@ body {
                 }
             }
 
+            &#active-button {
+                border-color: white;
+
+                &::before {
+                    display: block;
+                }
+            }
+
+            &::before {
+                background-color: colors.$active_button_shading;
+                content: "";
+                display: none;
+                height: 100%;
+                position: absolute;
+                width: 100%;
+                z-index: 100;
+            }
+
             &::after {
                 content: "";
                 position: absolute;
@@ -218,9 +236,10 @@ body {
                 display: none;
                 outline: 2px solid colors.$border_selected;
                 z-index: 100;
+                pointer-events: none;
             }
 
-            &:hover {
+            &:hover:not(#active-button) {
                 &::after {
                     display: block;
                 }
