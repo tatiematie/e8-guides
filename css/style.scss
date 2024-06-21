@@ -22,6 +22,8 @@
 .panel {
     background-color: colors.$panel_bg;
     padding: 8px;
+    outline: 2px solid colors.$panel_border_light;
+    outline-offset: -6px;
 
     .heading {
         h2 {

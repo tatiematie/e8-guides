@@ -18,6 +18,8 @@
 .panel {
   background-color: #40505d;
   padding: 8px;
+  outline: 2px solid #4e6070;
+  outline-offset: -6px;
 }
 .panel .heading h2 {
   color: #fff;
