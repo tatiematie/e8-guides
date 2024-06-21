@@ -1,29 +1,24 @@
 import buildPage from "./buildPage.js"
-import getCookie from "./getCookies.js"
+import { setCookie, getCookie } from "./cookieHandling.js"
 import updatePage from "./updatePage.js"
 import { loadData } from "./loadFile.js"
+import keyToID from "./keyToID.js"
 
 const loadPage = async () => {
   // import item data and save to global variable
-    const itemData =  await loadData("data/items.json")
-    window.itemData = itemData
-
-    const itemSelectList = document.querySelector("#item-select")
+    window.itemData =  await loadData("data/items.json")
+    window.itemSelectList = document.querySelector("#item-select")
 
     buildPage()
 
-    // check for saved cookies, if they exist then load, otherwise set first item as default
-    if (!getCookie("lastViewed")) {
-      itemSelectList.childNodes[0].click()
-    } else {
-      window.location.hash = getCookie("lastViewed")
-      
-      updatePage(getCookie("lastViewed"))
-    }
+    getCookie("lastViewed") ? updatePage(keyToID(getCookie("lastViewed"))) : itemSelectList.childNodes[0].click()
+    // getCookie("itemListScroll") > 0 ? itemSelectList.scrollTop = getCookie("itemListScroll") : null
 
     document.addEventListener('contextmenu', (event) => {
-      event.preventDefault()
+      // event.preventDefault()
   })
+
+  console.log("cookies: " + document.cookie)
 }   
 
 loadPage()
