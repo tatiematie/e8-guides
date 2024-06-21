@@ -1,21 +1,21 @@
 import keyToID from "./keyToID.js"
 import { loadPage } from "./loadFile.js"
-import setCookies from "./setCookies.js"
+import { setCookie } from "./cookieHandling.js"
 
 // update page on page interactions
-const updatePage = (key) => {
+const updatePage = (id) => {
     // update cookies
-    setCookies(key)
+    setCookie("lastViewed", id, 14)
 
     // update url
-    window.location.hash = keyToID(key)
+    window.location.hash = keyToID(id)
 
     // update favico and title
-    updateFavico(key)
-    document.title = `ROR2 E8 Guides: ${key}`
+    updateFavico(id)
+    document.title = `ROR2 E8 Guides: ${id}`
 
     // load selected post on display panel
-    loadPage(`./assets/pages/${keyToID(key)}.html`)
+    loadPage(`./assets/pages/${keyToID(id)}.html`)
 }
 
 // update favico for page update
