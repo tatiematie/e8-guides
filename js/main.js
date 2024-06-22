@@ -17,8 +17,6 @@ const loadPage = async () => {
     document.addEventListener('contextmenu', (event) => {
       // event.preventDefault()
   })
-
-  console.log("cookies: " + document.cookie)
 }   
 
 loadPage()
