@@ -25,10 +25,6 @@
   color: #fff;
   padding-bottom: 4px;
 }
-.panel .heading p {
-  color: #9a9897;
-  font-size: 1.125em;
-}
 .panel .content {
   background-color: #242e38;
   border: 4px solid #1d2428;
@@ -57,6 +53,21 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border: 1px solid #919193;
+  position: relative;
+  width: 48px;
+  height: 48px;
+}
+.item img {
+  left: 50%;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  width: 85%;
 }
 .item.common {
   background-image: url(../assets/images/treatments/common.png);
@@ -78,6 +89,34 @@
 }
 .item.equipment, .item.aspect {
   background-image: url(../assets/images/treatments/equipment.png);
+}
+.item:hover::after {
+  content: "";
+  display: none;
+  height: calc(100% + 6px);
+  left: -3px;
+  outline: 2px solid #f1e488;
+  pointer-events: none;
+  position: absolute;
+  top: -3px;
+  width: calc(100% + 6px);
+  z-index: 100;
+}
+
+.text.gray {
+  color: #9a9897;
+}
+.text.blue-gray {
+  color: #8394b3;
+}
+.text.green {
+  color: #9ce562;
+}
+.text.yellow {
+  color: #e5c962;
+}
+.text.red {
+  color: #e58262;
 }
 
 body {
@@ -101,8 +140,29 @@ body span {
 body h2 {
   font-size: 2em;
 }
+body h3 {
+  margin-bottom: 6px;
+}
+body h3,
 body p {
-  font-size: 1em;
+  color: #fff;
+  font-size: 1.125em;
+  position: relative;
+}
+body span {
+  display: inline-block;
+}
+body span.inline.img {
+  height: 100%;
+  margin-left: 3px;
+  position: relative;
+  width: 24px;
+}
+body span.inline.img img {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 #app {
@@ -116,6 +176,9 @@ body p {
 
 #display {
   flex-grow: 1;
+}
+#display p {
+  line-height: 1.4em;
 }
 #display #current-page .heading {
   align-items: center;
@@ -132,8 +195,40 @@ body p {
   padding: 4px;
   width: 64px;
 }
+#display #current-page .content {
+  padding: 12px;
+}
+#display #current-page .content .section {
+  background-color: #40505d;
+  border: 4px solid #4e6070;
+  padding: 8px;
+}
+#display #current-page .content .section p:not(:last-child) {
+  margin-bottom: 10px;
+}
+#display #current-page .content .section:not(:last-child) {
+  margin-bottom: 12px;
+}
+#display #current-page .content.synergies {
+  display: flex;
+  margin-bottom: 6px;
+  padding: 6px;
+}
+#display #current-page .content.synergies .plus {
+  width: 24px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#display #current-page .content.synergies .plus img {
+  width: 12px;
+  display: block;
+  margin: 0 auto;
+}
 
 #select {
+  height: -moz-fit-content;
+  height: fit-content;
   width: 362px;
 }
 #select #item-select {
@@ -145,58 +240,8 @@ body p {
   padding: 6px;
   scrollbar-width: none;
 }
-#select #item-select li {
-  border: 1px solid #919193;
-  height: 48px;
-  position: relative;
-  z-index: 100;
-}
-#select #item-select li button {
-  border: none;
-  height: 100%;
-  width: 100%;
-}
-#select #item-select li button img {
-  left: 50%;
-  pointer-events: none;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  width: 85%;
-}
-#select #item-select li button:hover {
+#select #item-select li:hover {
   cursor: pointer;
-}
-#select #item-select li#active-button {
-  border-color: white;
-}
-#select #item-select li#active-button::before {
-  display: block;
-}
-#select #item-select li::before {
-  background-color: rgba(255, 255, 255, 0.2509803922);
-  content: "";
-  display: none;
-  height: 100%;
-  position: absolute;
-  width: 100%;
-  z-index: 100;
-}
-#select #item-select li::after {
-  content: "";
-  position: absolute;
-  width: calc(100% + 6px);
-  height: calc(100% + 6px);
-  left: -3px;
-  top: -3px;
-  display: none;
   outline: 2px solid #f1e488;
-  z-index: 100;
-  pointer-events: none;
-}
-#select #item-select li:hover:not(#active-button)::after {
-  display: block;
+  outline-offset: 2px;
 }/*# sourceMappingURL=style.css.map */
