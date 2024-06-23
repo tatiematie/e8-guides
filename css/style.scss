@@ -132,8 +132,16 @@
         color: colors.$text_gray;
     }
 
+    &.light-gray {
+        color: colors.$text_light_gray;
+    }
+
     &.blue-gray {
         color: colors.$text_blue_gray;
+    }
+
+    &.blue {
+        color: colors.$text_blue;
     }
 
     &.green {
@@ -198,6 +206,7 @@ body {
             margin-left: 3px;
             position: relative;
             width: 24px;
+            pointer-events: none;
 
             img {
                 left: 0;
@@ -250,6 +259,8 @@ body {
                 padding: 8px;
 
                 p {
+                    color: colors.$text_light_gray;
+
                     &:not(:last-child) {
                         margin-bottom: 10px;
                     }
@@ -265,16 +276,23 @@ body {
                 margin-bottom: 6px;
                 padding: 6px;
 
-                .plus {
-                    width: 24px;
-                    height: 100%;
-                    display: flex;
-                    align-items: center;
+                li {
+                    position: relative;
 
-                    img {
-                        width: 12px;
-                        display: block;
-                        margin: 0 auto;
+                    &:not(:last-child) {
+                        padding-right: 32px;
+
+                        &::after {
+                            background: url(/assets/images/treatments/plus-sign.svg)
+                                center no-repeat;
+                            content: "";
+                            height: 16px;
+                            position: absolute;
+                            right: 10%;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            width: 16px;
+                        }
                     }
                 }
             }
@@ -296,8 +314,15 @@ body {
         scrollbar-width: none;
 
         li {
+            line-height: 0.75em;
+
+            button {
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
             &:hover {
-                cursor: pointer;
                 outline: 2px solid colors.$border_selected;
                 outline-offset: 2px;
             }
