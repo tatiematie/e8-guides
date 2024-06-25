@@ -268,7 +268,7 @@ body input:focus {
   padding-right: 32px;
 }
 #display #current-page .content.synergies li:not(:last-child)::after {
-  background: url(/assets/images/treatments/plus-sign.svg) center no-repeat;
+  background: url(../assets/images/treatments/plus-sign.svg) center no-repeat;
   content: "";
   height: 16px;
   position: absolute;
