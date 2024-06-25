@@ -10,15 +10,24 @@
 <div class="content">
     <div class="section">
         <h3>Description:</h3>
+        <p><span class="green text">15%</span> <span class="blue-gray text">(+15% per stack)</span> chance to <span class="green text">block</span> incoming damage. <span class="blue text">Unaffected by luck</span>. <span class="pink text">Corrupted by Safer Spaces</span><span class="inline img">&nbsp;<img src="./assets/images/items/safer-spaces.png" alt="Safer Spaces"></span>.</p>
     </div>
     <div class="section">
         <h3>Strategy:</h3>
-    </div>
-    <div class="section">
-        <h3>Synergy:</h3>
-        <ul class="content synergies"></ul>
+        <p>Tougher Times<span class="inline img">&nbsp;<img src="./assets/images/items/tougher-times.png" alt="Tougher Times"></span> stacks hyperbolically, meaning that each Tougher Times<span class="inline img">&nbsp;<img src="./assets/images/items/tougher-times.png" alt="Tougher Times"></span> gives you less stacking bonus for each stack you have.</p>
+        <p>If you're going to keep any Tougher Times<span class="inline img">&nbsp;<img src="./assets/images/items/tougher-times.png" alt="Tougher Times"></span>, it's best to keep just one if possible. Other defensive options like Oddly-shaped Opal<span class="inline img">&nbsp;<img src="./assets/images/items/oddly-shaped-opal.png" alt="Oddly-shaped Opal"></span> and Safer Spaces<span class="inline img">&nbsp;<img src="./assets/images/items/safer-spaces.png" alt="Safer Spaces"></span> are more efficient uses of your resources.</p>
     </div>
     <div class="section">
         <h3>Notes:</h3>
+        <p>Tougher Times<span class="inline img">&nbsp;<img src="./assets/images/items/tougher-times.png" alt="Tougher Times"></span> can block any incoming source of damage except for Void Fog<span class="inline img">&nbsp;<img src="./assets/images/effects/void-fog.png" alt="Void Fog"></span> and Strong Void Fog<span class="inline img">&nbsp;<img src="./assets/images/effects/void-fog-strong.png" alt="Strong Void Fog"></span>, this includes self inflicted damage, fall damage, and tick damage.</p>
+        <p>Void Reaver<span class="inline img">&nbsp;<img src="./assets/images/enemies/void-reaver.png" alt="Void Reaver"></span> implosions cannot be blocked by Tougher Times<span class="inline img">&nbsp;<img src="./assets/images/items/tougher-times.png" alt="Tougher Times"></span>.</p>
+        <p>Tougher Times<span class="inline img">&nbsp;<img src="./assets/images/items/tougher-times.png" alt="Tougher Times"></span> actually provides a <span class="green text">13%</span> chance to block incoming damage in spite of what it's Logbook entry says.</p>
+        <h3>Real Block Chance:</h3>
+        <div class="calc input">
+            <img src="./assets/images/items/tougher-times.png" alt="Tougher Times">
+            <span class="gray text">x</span>
+            <input type="text" name="tougher-times" id="tougher-times-input" value="1" oninput="this.value = this.value.replace(/\D/g, ''); document.querySelector('#calc-output').innerHTML = Math.round((1 - (1 / (0.15 * this.value + 1))) * 100) + '%'">
+            <p id="calc-output" class="green text">13%</p>
+        </div>
     </div>
 </div>
