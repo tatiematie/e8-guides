@@ -124,6 +124,36 @@
 .text.red {
   color: #e58262;
 }
+.text.pink {
+  color: #ed7fcd;
+}
+
+.input {
+  background-color: #242e38;
+  border: 2px solid #1d2428;
+  color: #9a9897;
+  display: flex;
+  padding: 4px;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-items: center;
+  width: 256px;
+}
+.input img {
+  width: 32px;
+}
+.input span {
+  font-size: 1.125em;
+  padding-left: 4px;
+}
+.input input {
+  background-color: transparent;
+  border: none;
+  color: #9a9897;
+  padding-left: 2px;
+  width: 10px;
+  flex: 1;
+}
 
 body {
   background: linear-gradient(135deg, #1b0b22 25%, transparent 25%), linear-gradient(225deg, #1b0b22 25%, transparent 25%), linear-gradient(315deg, #1b0b22 25%, transparent 25%), linear-gradient(45deg, #1b0b22 25%, transparent 25%);
@@ -171,6 +201,13 @@ body span.inline.img img {
   top: 0;
   width: 100%;
 }
+body input {
+  font-size: 1.125em;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2509803922);
+}
+body input:focus {
+  outline: none;
+}
 
 #app {
   display: flex;
@@ -210,10 +247,10 @@ body span.inline.img img {
   border: 4px solid #4e6070;
   padding: 8px;
 }
-#display #current-page .content .section p {
+#display #current-page .content .section > p {
   color: #ccd3e0;
 }
-#display #current-page .content .section p:not(:last-child) {
+#display #current-page .content .section > p:not(:last-child) {
   margin-bottom: 10px;
 }
 #display #current-page .content .section:not(:last-child) {
