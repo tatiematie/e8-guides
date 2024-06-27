@@ -13,6 +13,7 @@
 }
 * img {
   display: block;
+  pointer-events: none;
 }
 
 .panel {
@@ -60,7 +61,6 @@
 }
 .item img {
   left: 50%;
-  pointer-events: none;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -128,31 +128,55 @@
   color: #ed7fcd;
 }
 
-.input {
+.calc {
   background-color: #242e38;
   border: 2px solid #1d2428;
   color: #9a9897;
   display: flex;
-  padding: 4px;
   width: -moz-fit-content;
   width: fit-content;
   align-items: center;
   width: 256px;
 }
-.input img {
+.calc #input {
+  align-items: center;
+  display: flex;
+  padding-left: 2px;
+  width: 150%;
+}
+.calc #output {
+  position: relative;
+  padding-right: 8px;
+}
+.calc #output input {
+  padding-right: 0px;
+  text-align: right;
+  padding-right: 12px;
+}
+.calc #output span {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.calc img {
   width: 32px;
 }
-.input span {
+.calc span {
   font-size: 1.125em;
   padding-left: 4px;
 }
-.input input {
+.calc input {
   background-color: transparent;
   border: none;
   color: #9a9897;
-  padding-left: 2px;
-  width: 10px;
-  flex: 1;
+  padding-left: 4px;
+  width: 100%;
+}
+.calc #calc-output {
+  border-left: 2px solid #1d2428;
+  padding: 10.5px 0 10.5px 8px;
 }
 
 body {
@@ -193,7 +217,6 @@ body span.inline.img {
   margin-left: 3px;
   position: relative;
   width: 24px;
-  pointer-events: none;
 }
 body span.inline.img img {
   left: 0;
