@@ -28,7 +28,6 @@
 
     .heading {
         h2 {
-            color: #fff;
             padding-bottom: 4px;
         }
     }
@@ -242,6 +241,7 @@ body {
         display: block;
         text-shadow: 4px 4px 4px #00000040;
         width: fit-content;
+        color: #fff;
     }
 
     h2 {
@@ -254,7 +254,6 @@ body {
 
     h3,
     p {
-        color: #fff;
         font-size: 1.125em;
         position: relative;
     }
@@ -320,6 +319,7 @@ body {
                 }
             }
         }
+
         .content {
             padding: 12px;
 
@@ -329,7 +329,7 @@ body {
                 padding: 8px;
 
                 > p {
-                    color: colors.$text_light_gray;
+                    // color: colors.$text_light_gray;
 
                     &:not(:last-child) {
                         margin-bottom: 10px;
