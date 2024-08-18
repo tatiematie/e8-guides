@@ -1,6 +1,6 @@
 <div class="heading">
     <div class="corners">
-        <img src="./assets/images/items/tri-tip-dagger.png" alt="Tri-Tip Dagger">
+        <img src="./assets/images/items/tri-tip-dagger.png" />
     </div>
     <div class="title">
         <h2>Tri-Tip Dagger</h2>
@@ -10,16 +10,146 @@
 <div class="content">
     <div class="section">
         <h3>Description:</h3>
-        <p><span class="yellow text">+10%</span> <span class="blue-gray text">(+10% per stack)</span> chance to <span class="yellow text">bleed</span><span class="inline img">&nbsp;<img src="./assets/images/effects/bleed.png" alt="Bleed"></span> an enemy for <span class="yellow text">240%</span> base damage. <span class="pink text">Corrupted by Needletick</span><span class="inline img">&nbsp;<img src="./assets/images/items/needletick.png" alt="Needletick"></span>.</p>
+        <p>
+            Gain a
+            <span class="yellow text">10%</span>
+            <span class="blue-gray text">(+10% per stack)</span> chance to
+            <span class="yellow text">bleed</span>
+            the target for <span class="yellow text">240%</span> base damage.
+            <span class="void text">Corrupted by Needletick.</span>
+        </p>
     </div>
     <div class="section">
         <h3>Strategy:</h3>
+        <p class="light-gray text">
+            Survivors with high attack speed and high proc coefficients make the
+            best use of <span class="white text">Tri Tip Dagger</span>,
+            survivors with shotgun skills can also apply
+            <span class="yellow text">bleed</span> decently well.
+        </p>
+        <p class="light-gray text">
+            Melee and skill-based survivors do not benefit from bleed without
+            the help of other items like
+            <span class="void text">Plasma Shrimp</span> or
+            <span class="void text">Polylute</span>, but they still won't stack
+            <span class="yellow text">bleed</span> as efficiently
+            <span class="white text">Commando</span> or
+            <span class="white text">MUL-T</span>, for example.
+        </p>
     </div>
     <div class="section">
         <h3>Synergy:</h3>
-        <ul class="content synergies"></ul>
+        <ul class="content synergies">
+            <li>
+                <div class="item" title="Tri-Tip Dagger">
+                    <img
+                        src="assets/images/treatments/common.png"
+                        class="background"
+                    />
+                    <img
+                        src="./assets/images/items/tri-tip-dagger.png"
+                        class="itemImg"
+                    />
+                </div>
+            </li>
+            <li>
+                <div class="item" title="The Crowdfunder">
+                    <img
+                        src="assets/images/treatments/equipment.png"
+                        class="background"
+                    />
+                    <img
+                        src="./assets/images/items/the-crowdfunder.png"
+                        class="itemImg"
+                    />
+                </div>
+            </li>
+        </ul>
+        <p class="light-gray text">
+            Not all survivors can make effective use of
+            <span class="white text">Tri-Tip Dagger</span>, but
+            <span class="equipment text">The Crowdfunder</span> provides an out
+            for survivors who didn't end up collecting items that suit their
+            skills.
+        </p>
+        <p class="light-gray text">
+            <span class="equipment text">The Crowdfunder</span> has a
+            <span class="yellow text">1.0</span> proc coefficient and fires at
+            rates that rival that of
+            <span class="white text">Commando's</span> primary attack, even 1-2
+            <span class="white text">Tri-Tip Daggers</span> can allow survivors
+            to stack <span class="yellow text">bleed</span> as long as they have
+            enough <span class="yellow text">Gold</span> stockpiled.
+        </p>
     </div>
     <div class="section">
         <h3>Notes:</h3>
+        <p>
+            <span class="yellow text">Bleed's</span> duration depends on the
+            proc coefficient of the attack that procced it.
+            <span class="yellow text">Bleed</span> has a base duration of
+            <span class="blue text">3s</span>, which is multiplied by the proc
+            coefficient <span class="blue-gray text">(3s * 1.0 = 3s)</span>.
+        </p>
+        <h3>Real Bleed Chance:</h3>
+        <div class="calc triple">
+            <div id="input" title="# of Tri-Tip Daggers">
+                <img src="./assets/images/items/tri-tip-dagger.png" />
+                <input
+                    type="tel"
+                    name="tri-tip-dagger"
+                    id="calc-input"
+                    class="input gray text"
+                    value="1"
+                    placeholder="0"
+                    oninput="
+                        this.value = this. value.replace(/\D/g, '')
+                        if (!this.value) this.value = 0
+                        if (this.value >= 1 && this.value.startsWith(0)) this.value = this.value.substring(1)
+                            document.querySelector('#calc-output').value = `${Math.min((1 - Math.pow(1 - parseInt(this.value) * .1, parseInt(document.querySelector('#calc-modifier').value) + 1)) * 100, 100).toFixed(1)}%`;
+                        if (parseInt(document.querySelector('#calc-output').value) < 0 || 
+                            document.querySelector('#calc-output').value == '-Infinity%' || 
+                            parseInt(document.querySelector('#calc-output').value) == 99 ||
+                            parseInt(document.querySelector('#calc-output').value) < 100 && parseInt(document.querySelector('#calc-input').value) / 10 > 1) 
+                            document.querySelector('#calc-output').value = '100.0%';"
+                    onclick="this.select()"
+                />
+            </div>
+            <div id="modifier" title="# of 57 Leaf Clovers">
+                <img src="./assets/images/items/57-leaf-clover.png" />
+                <input
+                    type="tel"
+                    name="57-leaf-clover"
+                    id="calc-modifier"
+                    class="input gray text"
+                    value="0"
+                    placeholder="0"
+                    oninput="
+                        this.value = this.value.replace(/\D/g, '')
+                        if (!this.value) this.value = 0
+                        if (this.value >= 1 && this.value.startsWith(0)) this.value = this.value.substring(1)
+                        document.querySelector('#calc-output').value = `${Math.min((1 - Math.pow(1 - parseInt(document.querySelector('#calc-input').value) * .1, parseInt(this.value) + 1)) * 100, 100).toFixed(1)}%`;
+                        if (parseInt(document.querySelector('#calc-input').value >= 10))
+                            document.querySelector('#calc-output').value = '100.0%'
+                        if (parseInt(document.querySelector('#calc-output').value) < 0 || 
+                            document.querySelector('#calc-output').value == '-Infinity%' || 
+                            parseInt(document.querySelector('#calc-output').value) == 99 ||
+                            parseInt(document.querySelector('#calc-output').value) < 100 && parseInt(document.querySelector('#calc-input').value) / 10 > 1) 
+                            document.querySelector('#calc-output').value = '100.0%';"
+                    onclick="this.select()"
+                />
+            </div>
+            <div id="output" title="Real % chance to bleed">
+                <input
+                    type="tel"
+                    name="tougher-times"
+                    id="calc-output"
+                    class="output green text"
+                    value="10.0%"
+                    placeholder="10.0%"
+                    readonly
+                />
+            </div>
+        </div>
     </div>
 </div>
