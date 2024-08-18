@@ -8,7 +8,7 @@ const updatePage = (id) => {
     setCookie("lastViewed", id, 14)
 
     // update url
-    window.location.hash = keyToID(id)
+    // window.location.hash = keyToID(id)
 
     // update favico and title
     updateFavico(id)
