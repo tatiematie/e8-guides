@@ -1,6 +1,6 @@
 <div class="heading">
     <div class="corners">
-        <img src="./assets/images/items/tougher-times.png" alt="Tougher Times">
+        <img src="./assets/images/items/tougher-times.png" />
     </div>
     <div class="title">
         <h2>Tougher Times</h2>
@@ -10,30 +10,90 @@
 <div class="content">
     <div class="section">
         <h3>Description:</h3>
-        <p><span class="green text">+13%</span> <span class="blue-gray text">(+15% per stack)</span> chance to <span class="green text">block</span> incoming damage. <span class="yellow text">Unaffected by luck</span>. <span class="pink text">Corrupted by Safer Spaces</span><span class="inline img">&nbsp;<img src="./assets/images/items/safer-spaces.png" alt="Safer Spaces"></span>.</p>
+        <p>
+            <span class="green text">+15%</span>
+            <span class="blue-gray text">(+15% per stack)</span> chance to
+            <span class="green text">block</span> incoming damage.
+            <span class="yellow text">Unaffected by luck</span>.
+            <span class="void text">Corrupted by Safer Spaces</span>.
+        </p>
     </div>
     <div class="section">
         <h3>Strategy:</h3>
-        <p class="light-gray text">Tougher Times<span class="inline img">&nbsp;<img src="./assets/images/items/tougher-times.png" alt="Tougher Times"></span> stacks hyperbolically, meaning that each Tougher Times<span class="inline img">&nbsp;<img src="./assets/images/items/tougher-times.png" alt="Tougher Times"></span> gives you less stacking bonus for each stack you have.</p>
-        <p class="light-gray text">If you're going to keep any Tougher Times<span class="inline img">&nbsp;<img src="./assets/images/items/tougher-times.png" alt="Tougher Times"></span>, it's best to keep one or two if possible. Other defensive options like Oddly-shaped Opal<span class="inline img">&nbsp;<img src="./assets/images/items/oddly-shaped-opal.png" alt="Oddly-shaped Opal"></span> and Safer Spaces<span class="inline img">&nbsp;<img src="./assets/images/items/safer-spaces.png" alt="Safer Spaces"></span> are more efficient uses of your resources.</p>
-        <p class="light-gray text">If you have a Tougher Times<span class="inline img">&nbsp;<img src="./assets/images/items/tougher-times.png" alt="Tougher Times"></span> and a Pluripotent Larva<span class="inline img">&nbsp;<img src="./assets/images/items/pluripotent-larva.png" alt="Pluripotent Larva"></span> it may be worth considering using the Pluripotent Larva<span class="inline img">&nbsp;<img src="./assets/images/items/pluripotent-larva.png" alt="Pluripotent Larva"></span> if you have other items that you can corrupt as well.</p>
+        <p class="light-gray text">
+            <span class="white text">Tougher Times</span> stacks hyperbolically,
+            meaning that each
+            <span class="white text">Tougher Times</span> gives you less
+            stacking bonus for each stack you have.
+        </p>
+        <p class="light-gray text">
+            It's best not to invest too heavily into
+            <span class="white text">Tougher Times</span> unless you have no
+            other options, the diminishing returns granted by stacking
+            <span class="white text">Tougher Times</span> lend it to being less
+            efficient than other defensive options like
+            <span class="white text">Oddly-shaped Opal</span>.
+        </p>
+        <p class="light-gray text">
+            It may be worth using a
+            <span class="pink text">Pluripotent Larva</span> to corrupt your
+            <span class="white text">Tougher Times</span> into a
+            <span class="pink text">Safer Spaces</span> if you have enough
+            corruptable items to justify sacrificing the extra life, generally
+            you want to do this before picking up any
+            <span class="yellow-item text">Boss Items</span> as not to corrupt
+            them into <span class="pink text">Newly Hatched Zoea</span>.
+        </p>
     </div>
     <div class="section">
         <h3>Notes:</h3>
-        <p class="light-gray text">Tougher Times<span class="inline img">&nbsp;<img src="./assets/images/items/tougher-times.png" alt="Tougher Times"></span> can block any incoming source of damage except for Void Fog<span class="inline img">&nbsp;<img src="./assets/images/effects/void-fog.png" alt="Void Fog"></span> and Strong Void Fog<span class="inline img">&nbsp;<img src="./assets/images/effects/void-fog-strong.png" alt="Strong Void Fog"></span>, this includes self inflicted damage, fall damage, and tick damage.</p>
-        <p class="light-gray text">Void Reaver<span class="inline img">&nbsp;<img src="./assets/images/enemies/void-reaver.png" alt="Void Reaver"></span> implosions cannot be blocked by Tougher Times<span class="inline img">&nbsp;<img src="./assets/images/items/tougher-times.png" alt="Tougher Times"></span>.</p>
-        <p class="light-gray text">Tougher Times<span class="inline img">&nbsp;<img src="./assets/images/items/tougher-times.png" alt="Tougher Times"></span> provides a base chance of <span class="green text">15%</span> to block damage, but that <span class="green text">15%</span> is run through this calculation f(x) = (1 - (1/.15x+1)), which results in one stack of Tougher Times<span class="inline img">&nbsp;<img src="./assets/images/items/tougher-times.png" alt="Tougher Times"></span> actually providing a <span class="green text">15%</span> chance to block damage.</p>
+        <p class="light-gray text">
+            <span class="white text">Tougher Times</span> can block any incoming
+            source of damage except Void Fog and Strong Void Fog, this includes
+            self inflicted damage and fall damage.
+        </p>
+        <p class="light-gray text">
+            Void Reaver implosions cannot be blocked by
+            <span class="white text">Tougher Times</span>.
+        </p>
+        <p class="light-gray text">
+            <span class="white text">Tougher Times</span> provides a base chance
+            of <span class="green text">15%</span> to block damage, but that
+            <span class="green text">15%</span> is run through this calculation
+            <span class="yellow text">f(x) = (1 - (1 / .15 + 1))</span> which
+            results in one stack of
+            <span class="white text">Tougher Times</span> actually providing a
+            <span class="green text">13%</span> chance to block damage.
+        </p>
         <h3>Real Block Chance:</h3>
-        <div class="calc">
-            <div id="input">
-                <img src="./assets/images/items/tougher-times.png" alt="Tougher Times">
-                <span class="gray text">x</span>
-                <input type="text" name="tougher-times" id="calc-input" class="input" value="1" placeholder="1" oninput="this.value = this.value.replace(/\D/g, ''); document.querySelector('#calc-output').value = ((1-(1/(.15*this.value+1)))*100).toFixed(1)" onclick="this.select()">
+        <div class="calc double">
+            <div id="input" title="# of Tougher Times">
+                <img src="./assets/images/items/tougher-times.png" />
+                <input
+                    type="text"
+                    name="tougher-times"
+                    id="calc-input"
+                    class="input gray text"
+                    value="1"
+                    placeholder="0"
+                    oninput="
+                        this.value = this. value.replace(/\D/g, '')
+                        if (!this.value) this.value = 0
+                        if (this.value >= 1 && this.value.startsWith(0)) this.value = this.value.substring(1)
+                        document.querySelector('#calc-output').value = ((1 - 1 / (.15 * parseInt(this.value) + 1)) * 100).toFixed(1) + '%'"
+                    onclick="this.select()"
+                />
             </div>
-            <div id="output">
-                <input type="text" name="tougher-times" id="calc-output" class="output green text" value="13.0" placeholder="13.0" oninput="
-                    this.value = this.value.replace(/\D/g, ''); if (parseFloat(this.value) > 99.9) this.value = 99.9; document.querySelector('#calc-input').value = Math.ceil(((1 / (1 - (this.value / 100))) - 1) / 0.15)" onclick="this.select()">
-                <span class="green text">%</span>
+            <div id="output" title="Real % chance to block">
+                <input
+                    type="text"
+                    name="tougher-times"
+                    id="calc-output"
+                    class="output green text"
+                    value="13.0%"
+                    placeholder="13.0%"
+                    readonly
+                />
             </div>
         </div>
     </div>
