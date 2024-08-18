@@ -276,13 +276,13 @@
         "rarity": "Boss"
     },
     "Pearl": {
-        "rarity": "Stage"
+        "rarity": "Boss"
     },
     "Empathy Cores": {
         "rarity": "Boss"
     },
     "Irradiant Pearl": {
-        "rarity": "Stage"
+        "rarity": "Boss"
     },
     "Mired Urn": {
         "rarity": "Boss"
@@ -468,24 +468,24 @@
         "rarity": "Equipment"
     },
     "Ifrit's Distinction": {
-        "rarity": "Aspect"
+        "rarity": "Equipment"
     },
     "His Reassurance": {
-        "rarity": "Aspect"
+        "rarity": "Equipment"
     },
     "Silence Between Two Strikes": {
-        "rarity": "Aspect"
+        "rarity": "Equipment"
     },
     "Her Biting Embrace": {
-        "rarity": "Aspect"
+        "rarity": "Equipment"
     },
     "N'kuhana's Retort": {
-        "rarity": "Aspect"
+        "rarity": "Equipment"
     },
     "Spectral Circlet": {
-        "rarity": "Aspect"
+        "rarity": "Equipment"
     },
     "Shared Design": {
-        "rarity": "Aspect"
+        "rarity": "Equipment"
     }
 }
