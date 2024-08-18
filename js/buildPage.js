@@ -1,6 +1,8 @@
 import keyToID from "./keyToID.js"
 import updatePage from "./updatePage.js"
 
+const displayPanel = document.querySelector("#display")
+
 // import data to build page on load
 const buildPage = () => {
     Object.entries(itemData).forEach(([key, values]) => {
@@ -32,6 +34,10 @@ const newItemSelector = (key, values) => {
     // add click listener
     newListItem.addEventListener("click", event => {
         updatePage(key)
+
+        if (window.innerWidth <= 476) {
+            displayPanel.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        }
     })
 
     itemSelectList.appendChild(newListItem)

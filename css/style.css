@@ -128,7 +128,9 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2px;
-  width: 256px;
+}
+.calc.triple {
+  grid-template-columns: repeat(3, 1fr);
 }
 .calc #input,
 .calc #modifier,
@@ -156,14 +158,18 @@
   padding-right: 12px;
   text-align: right;
 }
-@media only screen and (max-width: 484px) {
+@media only screen and (min-width: 477px) {
+  .calc {
+    width: 256px;
+  }
+  .calc.triple {
+    width: 384px;
+  }
+}
+@media only screen and (max-width: 476px) {
   .calc {
     width: 100%;
   }
-}
-.calc.triple {
-  grid-template-columns: repeat(3, 1fr);
-  width: 384px;
 }
 
 body {
@@ -251,6 +257,7 @@ body::-webkit-scrollbar {
 
 #display {
   flex-grow: 1;
+  scroll-margin: 12px;
 }
 #display p {
   line-height: 1.4em;

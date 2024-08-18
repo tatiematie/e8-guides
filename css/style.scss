@@ -157,7 +157,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2px;
-    width: 256px;
+
+    &.triple {
+        grid-template-columns: repeat(3, 1fr);
+    }
 
     #input,
     #modifier,
@@ -190,13 +193,16 @@
         }
     }
 
-    @media only screen and (max-width: 484px) {
-        width: 100%;
+    @media only screen and (min-width: 477px) {
+        width: 256px;
+
+        &.triple {
+            width: 384px;
+        }
     }
 
-    &.triple {
-        grid-template-columns: repeat(3, 1fr);
-        width: 384px;
+    @media only screen and (max-width: 476px) {
+        width: 100%;
     }
 }
 
@@ -295,6 +301,7 @@ body {
 
 #display {
     flex-grow: 1;
+    scroll-margin: 12px;
 
     p {
         line-height: 1.4em;
