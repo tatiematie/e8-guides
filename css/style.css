@@ -55,10 +55,14 @@
   background-size: cover;
   border: 1px solid #919193;
   position: relative;
-  width: 48px;
-  height: 48px;
+  width: 100%;
+  height: 100%;
 }
-.item img {
+.item .background {
+  width: 100%;
+  height: 100%;
+}
+.item .itemImg {
   left: 50%;
   position: absolute;
   top: 50%;
@@ -67,27 +71,6 @@
      -moz-user-select: none;
           user-select: none;
   width: 85%;
-}
-.item.common {
-  background-image: url(../assets/images/treatments/common.png);
-}
-.item.uncommon {
-  background-image: url(../assets/images/treatments/uncommon.png);
-}
-.item.legendary {
-  background-image: url(../assets/images/treatments/legendary.png);
-}
-.item.boss, .item.stage {
-  background-image: url(../assets/images/treatments/boss.png);
-}
-.item.void {
-  background-image: url(../assets/images/treatments/void.png);
-}
-.item.lunar {
-  background-image: url(../assets/images/treatments/lunar.png);
-}
-.item.equipment, .item.aspect {
-  background-image: url(../assets/images/treatments/equipment.png);
 }
 .item:hover::after {
   content: "";
@@ -117,65 +100,70 @@
 .text.green {
   color: #9ce562;
 }
+.text.uncommon {
+  color: #77ff16;
+}
 .text.yellow {
   color: #e5c962;
+}
+.text.boss {
+  color: #ffeb00;
+}
+.text.equipment {
+  color: #fa7f11;
 }
 .text.red {
   color: #e58262;
 }
-.text.pink {
+.text.legendary {
+  color: #e7553b;
+}
+.text.void {
   color: #ed7fcd;
 }
 
 .calc {
-  background-color: #242e38;
+  background-color: #1d2428;
   border: 2px solid #1d2428;
-  color: #9a9897;
-  display: flex;
-  width: -moz-fit-content;
-  width: fit-content;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
   width: 256px;
 }
-.calc #input {
-  align-items: center;
-  display: flex;
-  padding-left: 2px;
-  width: 150%;
-}
+.calc #input,
+.calc #modifier,
 .calc #output {
+  background-color: #242e38;
   position: relative;
-  padding-right: 8px;
-}
-.calc #output input {
-  padding-right: 0px;
-  text-align: right;
-  padding-right: 12px;
-}
-.calc #output span {
-  position: absolute;
-  right: 8px;
-  top: 50%;
-  transform: translateY(-50%);
-  pointer-events: none;
 }
 .calc img {
+  left: 4px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   width: 32px;
-}
-.calc span {
-  font-size: 1.125em;
-  padding-left: 4px;
 }
 .calc input {
   background-color: transparent;
   border: none;
-  color: #9a9897;
-  padding-left: 4px;
+  height: 40px;
   width: 100%;
 }
-.calc #calc-output {
-  border-left: 2px solid #1d2428;
-  padding: 10.5px 0 10.5px 8px;
+.calc input.input {
+  padding-left: 44px;
+}
+.calc input.output {
+  padding-right: 12px;
+  text-align: right;
+}
+@media only screen and (max-width: 484px) {
+  .calc {
+    width: 100%;
+  }
+}
+.calc.triple {
+  grid-template-columns: repeat(3, 1fr);
+  width: 384px;
 }
 
 body {
@@ -184,8 +172,9 @@ body {
   background-position: top center;
   background-size: 40px 40px;
   height: 100%;
-  width: 100%;
   padding: 24px;
+  scrollbar-width: none;
+  width: 100%;
 }
 body h2,
 body h3,
@@ -195,18 +184,25 @@ body span {
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2509803922);
   width: -moz-fit-content;
   width: fit-content;
-  color: #fff;
+  color: #fefefe;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+  body h2,
+  body h3,
+  body p,
+  body span {
+    -webkit-text-size-adjust: 100%;
+  }
 }
 body h2 {
   font-size: 2em;
 }
 body h3 {
   margin-bottom: 6px;
+  font-size: 1.33em;
 }
-body h3,
 body p {
   font-size: 1.125em;
-  position: relative;
 }
 body span {
   display: inline-block;
@@ -230,14 +226,27 @@ body input {
 body input:focus {
   outline: none;
 }
+@media only screen and (max-width: 887px) {
+  body {
+    padding: 12px;
+  }
+}
+body::-webkit-scrollbar {
+  display: none;
+}
 
 #app {
   display: flex;
   flex-direction: row;
   gap: 12px;
   max-height: 100%;
-  margin: 0 auto;
+  margin: 0 auto 48px;
   max-width: 1080px;
+}
+@media only screen and (max-width: 887px) {
+  #app {
+    flex-direction: column-reverse;
+  }
 }
 
 #display {
@@ -262,7 +271,7 @@ body input:focus {
   width: 64px;
 }
 #display #current-page .content {
-  padding: 12px;
+  padding: 6px;
 }
 #display #current-page .content .section {
   background-color: #40505d;
@@ -272,26 +281,55 @@ body input:focus {
 #display #current-page .content .section > p:not(:last-child) {
   margin-bottom: 10px;
 }
+#display #current-page .content .section .proc-info {
+  background-color: #1d2428;
+  border: 2px solid #1d2428;
+  display: flex;
+  gap: 2px;
+  height: 40px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#display #current-page .content .section .proc-info li {
+  align-items: center;
+  background-color: #242e38;
+  display: flex;
+  height: 100%;
+  padding-left: 8px;
+  width: 144px;
+}
+#display #current-page .content .section .proc-info li p {
+  color: #9a9897;
+}
+#display #current-page .content .section .proc-info li:last-child {
+  padding-right: 12px;
+}
+#display #current-page .content .section .proc-info li:last-child p:last-child {
+  margin: 0 0 0 auto;
+}
+#display #current-page .content .section .proc-info:not(:first-of-type) {
+  border-top: none;
+}
 #display #current-page .content .section:not(:last-child) {
   margin-bottom: 12px;
 }
 #display #current-page .content.synergies {
   display: flex;
+  gap: 32px;
   margin-bottom: 6px;
   padding: 6px;
 }
 #display #current-page .content.synergies li {
+  height: 48px;
   position: relative;
-}
-#display #current-page .content.synergies li:not(:last-child) {
-  padding-right: 32px;
+  width: 48px;
 }
 #display #current-page .content.synergies li:not(:last-child)::after {
   background: url(../assets/images/treatments/plus-sign.svg) center no-repeat;
   content: "";
   height: 16px;
   position: absolute;
-  right: 10%;
+  right: -24px;
   top: 50%;
   transform: translateY(-50%);
   width: 16px;
@@ -300,11 +338,11 @@ body input:focus {
 #select {
   height: -moz-fit-content;
   height: fit-content;
-  width: 362px;
 }
 #select #item-select {
   display: grid;
   gap: 6px;
+  grid-auto-rows: 48px;
   grid-template-columns: repeat(6, 48px);
   max-height: 234px;
   overflow-y: auto;
@@ -320,4 +358,12 @@ body input:focus {
 #select #item-select li:hover {
   outline: 2px solid #f1e488;
   outline-offset: 2px;
+}
+@media only screen and (max-width: 887px) {
+  #select #item-select {
+    grid-template-columns: repeat(auto-fill, minmax(48px, 1fr));
+  }
+}
+#select #item-select::-webkit-scrollbar {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

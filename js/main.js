@@ -5,7 +5,6 @@ import { loadData } from "./loadFile.js"
 import keyToID from "./keyToID.js"
 
 const loadPage = async () => {
-  // import item data and save to global variable
     window.itemData =  await loadData("data/items.json")
     window.itemSelectList = document.querySelector("#item-select")
 
@@ -16,7 +15,18 @@ const loadPage = async () => {
 
     document.addEventListener('contextmenu', (event) => {
       // event.preventDefault()
-  })
+    })
+
+    setInterval(() => {
+      const itemSelect = document.querySelector("#item-select"),
+      selectChildren = itemSelect.querySelectorAll("li")
+
+      const childSize = selectChildren[0].getBoundingClientRect()
+
+      if (childSize.width != childSize.height) {
+        itemSelect.style.gridAutoRows = `${childSize.width}px`
+      }
+  }, 0)
 }
 
 loadPage()
