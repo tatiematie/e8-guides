@@ -132,52 +132,56 @@
   color: #ed7fcd;
 }
 
-.calc {
-  background-color: #1d2428;
-  border: 2px solid #1d2428;
+#calculator {
+  align-items: center;
+  background-color: #242e38;
+  border: 4px solid #1d2428;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   gap: 2px;
+  grid-template-columns: repeat(2, 1fr);
 }
-.calc.triple {
+#calculator.triple {
   grid-template-columns: repeat(3, 1fr);
 }
-.calc #input,
-.calc #modifier,
-.calc #output {
-  background-color: #242e38;
+#calculator div {
   position: relative;
 }
-.calc img {
-  left: 4px;
+#calculator div img {
+  height: 85%;
+  left: 2px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 32px;
 }
-.calc input {
+#calculator div:not(:last-child) {
+  border-right: 4px solid #1d2428;
+}
+#calculator input {
   background-color: transparent;
   border: none;
-  height: 40px;
+  color: #9a9897;
+  height: 46px;
   width: 100%;
 }
-.calc input.input {
-  padding-left: 44px;
+#calculator #input,
+#calculator #clovers {
+  padding-left: 46px;
 }
-.calc input.output {
+#calculator #output {
+  color: #9ce562;
   padding-right: 12px;
   text-align: right;
 }
 @media only screen and (min-width: 477px) {
-  .calc {
-    width: 256px;
+  #calculator {
+    width: 320px;
   }
-  .calc.triple {
+  #calculator.triple {
     width: 384px;
   }
 }
 @media only screen and (max-width: 476px) {
-  .calc {
+  #calculator {
     width: 100%;
   }
 }

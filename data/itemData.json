@@ -110,7 +110,59 @@
     },
     "tougher-times": {
         "name": "Tougher Times",
-        "rarity": ["Common"]
+        "rarity": ["Common"],
+        "info": {
+            "Description": {
+                "item-description": {
+                    "type": "text",
+                    "values": [
+                        ""
+                    ]
+                }
+            },
+            "Strategy": {
+                "item-strategy": {
+                    "type": "text",
+                    "values": [
+                        ""
+                    ]
+                }
+            },
+            "Synergy": {
+                "pennies-synergy": {
+                    "type": "items",
+                    "values": [
+                        "repulsion-armor-plate",
+                        "roll-of-pennies"
+                    ]
+                },
+                "pennies-synergy-explanation": {
+                    "type": "text",
+                    "values": [
+                        ""
+                    ]
+                }
+            },
+            "Notes": {
+                "item-calc": {
+                    "type": "calculator",
+                    "mode": "hyperbolic",
+                    "output": "chance",
+                    "base": 0.15,
+                    "defaultValue": "13.04",
+                    "fields": [
+                        "input"
+                    ]
+                
+                },
+                "item-notes": {
+                    "type": "text",
+                    "values": [
+                        ""
+                    ]
+                }
+            }
+        }
     },
     "tri-tip-dagger": {
         "name": "Tri-Tip Dagger",
