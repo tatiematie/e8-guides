@@ -384,6 +384,11 @@ body::-webkit-scrollbar {
     grid-template-columns: repeat(auto-fill, minmax(48px, 1fr));
   }
 }
+@media only screen and (max-width: 393px) {
+  #select #item-select {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
 #select #item-select::-webkit-scrollbar {
   display: none;
 }/*# sourceMappingURL=style.css.map */
