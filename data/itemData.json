@@ -7,7 +7,7 @@
                 "item-description": {
                     "type": "text",
                     "values": [
-                        "Reduce incoming damage by <span class='yellow text'>5</span> <span class='blue-gray text'>(+5 per stack)</span>, damage cannot be reduced below <span class='yellow text'>1</span>."
+                        "Reduce incoming damage by <span class='yellow text'>5</span> <span class='blue-gray text'>(+5 per stack)</span>, damage cannot be reduced below <span class='yellow text'>1</span>"
                     ]
                 }
             },
@@ -15,9 +15,9 @@
                 "item-strategy": {
                     "type": "text",
                     "values": [
-                        "<span class='white text'>Repulsion Armor Plate</span> prevents you from gaining Curse stacks from sources of chip damage such as Lesser Wisp shots and Stone Titan lasers.",
-                        "<span class='white text'>Repulsion Armor Plate</span> can also stop you from gaining Curse stacks from charging Pillars of Blood on Commencement. If you do not have a way to pillar-skip going into Stage 6, it would be wise to keep at least one <span class='white text'>Repulsion Armor Plate</span>, as charging Pillars of Blood will cause you to lose your <span class='green text'>one-shot protection</span> in Eclipse 8.",
-                        "Stacking <span class='white text'>Repulsion Armor Plate</span> generally wastes resources, scrap existing <span class='white text'>Repulsion Armor Plates</span> before picking up new ones if possible."
+                        "<span class='white text'>Repulsion Armor Plate</span> prevents you from gaining Curse stacks from sources of chip damage such as Lesser Wisp shots and Stone Titan lasers",
+                        "<span class='white text'>Repulsion Armor Plate</span> can also stop you from gaining Curse stacks from charging Pillars of Blood on Commencement. If you do not have a way to pillar-skip going into Stage 6, it would be wise to keep at least one <span class='white text'>Repulsion Armor Plate</span>, as charging Pillars of Blood will cause you to lose your <span class='green text'>one-shot protection</span> in Eclipse 8",
+                        "Stacking <span class='white text'>Repulsion Armor Plate</span> generally wastes resources, scrap existing <span class='white text'>Repulsion Armor Plates</span> before picking up new ones if possible"
                     ]
                 }
             },
@@ -32,7 +32,7 @@
                 "pennies-synergy-explanation": {
                     "type": "text",
                     "values": [
-                        "You can collect <span class='yellow text'>gold</span> easily by pairing <span class='white text'>Repulsion Armor Plate</span> with <span class='white text'>Roll of Pennies</span> and tanking shots from Lesser Wisps or burn damage from Fire Elites, this can be especially helpful during the early stages."
+                        "You can collect <span class='yellow text'>gold</span> easily by pairing <span class='white text'>Repulsion Armor Plate</span> with <span class='white text'>Roll of Pennies</span> and tanking shots from Lesser Wisps or burn damage from Fire Elites, this can be especially helpful during the early stages"
                     ]
                 }
             },
@@ -40,7 +40,7 @@
                 "item-notes": {
                     "type": "text",
                     "values": [
-                        "Taking <span class='white text'>Repulsion Armor Plate</span> into the final boss fight results in Mithrix giving your items back out of order during Phase 4 of the boss fight <span class='blue-gray text'>(PC & console)</span>."
+                        "Taking <span class='white text'>Repulsion Armor Plate</span> into the final boss fight results in Mithrix giving your items back out of order during Phase 4 of the boss fight <span class='blue-gray text'>(PC & console)</span>"
                     ]
                 }
             }
@@ -54,7 +54,7 @@
                 "item-description": {
                     "type": "text",
                     "values": [
-                        "Gain <span class='yellow text'>7.5%</span> <span class='blue-gray text'>(+7.5 per stack)</span> <span class='yellow text'>attack speed</span> and <span class='blue text'>7%</span> <span class='blue-gray text'>(+7% per stack)</span> <span class='blue text'>movement speed</span>."
+                        "Gain <span class='yellow text'>7.5%</span> <span class='blue-gray text'>(+7.5 per stack)</span> <span class='yellow text'>attack speed</span> and <span class='blue text'>7%</span> <span class='blue-gray text'>(+7% per stack)</span> <span class='blue text'>movement speed</span>"
                     ]
                 }
             },
@@ -62,9 +62,9 @@
                 "item-strategy": {
                     "type": "text",
                     "values": [
-                        "<span class='white text'>Mocha</span> is a good early-run substitution for true <span class='blue text'>movement speed</span> items like <span class='white text'>Paul's Goat Hoof</span> and <span class='white text'>Energy Drink</span>.",
-                        "Gathering high stacks of <span class='white text'>Mocha</span> can make certain skills or tech more difficult to use, such as Mercenary's Expose Transfer or Bandit's Special skills.",
-                        "Unless you're playing a survivor that relies on proc-chaining, it's usually better to trade <span class='white text'>Mocha</span> for <span class='white text'>Paul's Goat Hoof</span> or <span class='white text'>Energy Drink</span> as that can free up <span class='blue text'>50%-75%</span> of the items you were previously using for <span class='blue text'>movement speed</span>."
+                        "<span class='white text'>Mocha</span> is a good early-run substitution for true <span class='blue text'>movement speed</span> items like <span class='white text'>Paul's Goat Hoof</span> and <span class='white text'>Energy Drink</span>",
+                        "Gathering high stacks of <span class='white text'>Mocha</span> can make certain skills or tech more difficult to use, such as Mercenary's Expose Transfer or Bandit's Special skills",
+                        "Unless you're playing a survivor that relies on proc-chaining, it's usually better to trade <span class='white text'>Mocha</span> for <span class='white text'>Paul's Goat Hoof</span> or <span class='white text'>Energy Drink</span> as that can free up <span class='blue text'>50%-75%</span> of the items you were previously using for <span class='blue text'>movement speed</span>"
                     ]
                 }
             }
@@ -78,7 +78,7 @@
                 "item-description": {
                     "type": "text",
                     "values": [
-                        "Killing an enemy grants a <span class='green text'>temporary barrier</span> equal to <span class='green text'>15hp</span> <span class='blue-gray text'>(+15 per stack)</span>."
+                        "Killing an enemy grants a <span class='green text'>temporary barrier</span> equal to <span class='green text'>15hp</span> <span class='blue-gray text'>(+15 per stack)</span>"
                     ]
                 }
             },
@@ -86,8 +86,8 @@
                 "item-strategy": {
                     "type": "text",
                     "values": [
-                        "Having a temporary barrier can be nice in a pinch but it isn't as useful as avoiding the damage entirely, or reducing the amount of incoming damage.",
-                        "<span class='white text'>Topaz Brooch</span> tends to lose it's value as your run continues and the enemies begin to hit harder or take longer to kill, you'd be better off investing your Common items into <span class='blue text'>movement speed</span> or <span class='green text'>armor</span> if possible."
+                        "Having a temporary barrier can be nice in a pinch but it isn't as useful as avoiding the damage entirely, or reducing the amount of incoming damage",
+                        "<span class='white text'>Topaz Brooch</span> tends to lose it's value as your run continues and the enemies begin to hit harder or take longer to kill, you'd be better off investing your Common items into <span class='blue text'>movement speed</span> or <span class='green text'>armor</span> if possible"
                     ]
                 }
             },
@@ -102,7 +102,7 @@
                 "pennies-synergy-explanation": {
                     "type": "text",
                     "values": [
-                        "<span class='white text'>Topaz Brooch</span> synergizes with <span class='equipment text'>Forgive Me Please</span>, which activates <span class='white text'>Topaz Brooch's</span> on-kill effect. This pairing isn't very useful on its own, but if you have a <span class='legendary text'>Soulbound Catalyst</span> you can maintain a permanent barrier for 100% of your health."
+                        "<span class='white text'>Topaz Brooch</span> synergizes with <span class='equipment text'>Forgive Me Please</span>, which activates <span class='white text'>Topaz Brooch's</span> on-kill effect. This pairing isn't very useful on its own, but if you have a <span class='legendary text'>Soulbound Catalyst</span> you can maintain a permanent barrier for 100% of your health"
                     ]
                 }
             }
