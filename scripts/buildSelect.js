@@ -28,7 +28,13 @@ const createNewButton = (id) => {
         setCookie("lastViewed", id, 7)
 
         updateDisplay(id)
+
+        if (window.innerWidth <= 448 || window.innerHeight <= 500) {
+            const displayPanel = document.querySelector("#display")
+                displayPanel.scrollIntoView({ behavior: 'smooth' })
+        }
     })
+    
     newButton.appendChild(newImg)
 
     newListItem.appendChild(newButton)
