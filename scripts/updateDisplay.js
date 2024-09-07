@@ -7,22 +7,10 @@ const updateDisplay = (id) => {
     populateDisplay(id)
 }
 
-// remove the old favico and replace it with a new one for the current item
-// seems to work faster than updating the existing favico for whatever reason
+// update favico to be reflect the current item in view
 const updateFavico = (id) => {
-    const favico = document.head.querySelector("#favico"),
-        newFavico = document.createElement("link")
-
-    newFavico.id = "favico"
-    newFavico.rel = "icon"
-    newFavico.type = "image/x-icon"
-    newFavico.href = `assets/images/items/${id}.png`
-
-    if (favico) {
-        document.head.removeChild(favico)
-    }
-
-    document.head.appendChild(newFavico)
+    const favico = document.head.querySelector("link[rel='icon']")
+        favico.href = `assets/images/items/${id}.png`
 }
 
 // update the page title
