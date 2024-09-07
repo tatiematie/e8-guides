@@ -97,6 +97,7 @@ const populateDisplay = (id) => {
                         newField = document.createElement("input")
 
                         newField.id = field
+                        newField.type = "tel"
 
                         let  newThumbnail = document.createElement("img")
                         
