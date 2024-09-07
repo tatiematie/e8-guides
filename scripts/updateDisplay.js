@@ -1,6 +1,5 @@
 const updateDisplay = (id) => {
     updateTitle(window.itemList[id].name)
-    console.log(window.itemList[id].name)
 
     updateFavico(id)
 
