@@ -1,0 +1,755 @@
+{
+    "repulsion-armor-plate": {
+        "name": "Repulsion Armor Plate",
+        "rarity": ["Common"],
+        "info": {
+            "Description": {
+                "item-description": {
+                    "type": "text",
+                    "values": [
+                        "Reduce incoming damage by <span class='yellow text'>5</span> <span class='blue-gray text'>(+5 per stack)</span>, damage cannot be reduced below <span class='yellow text'>1</span>."
+                    ]
+                }
+            },
+            "Strategy": {
+                "item-strategy": {
+                    "type": "text",
+                    "values": [
+                        "<span class='white text'>Repulsion Armor Plate</span> prevents you from gaining Curse stacks from sources of chip damage such as Lesser Wisp shots and Stone Titan lasers.",
+                        "<span class='white text'>Repulsion Armor Plate</span> can also stop you from gaining Curse stacks from charging Pillars of Blood on Commencement. If you do not have a way to pillar-skip going into Stage 6, it would be wise to keep at least one <span class='white text'>Repulsion Armor Plate</span>, as charging Pillars of Blood will cause you to lose your <span class='green text'>one-shot protection</span> in Eclipse 8.",
+                        "Stacking <span class='white text'>Repulsion Armor Plate</span> generally wastes resources, scrap existing <span class='white text'>Repulsion Armor Plates</span> before picking up new ones if possible."
+                    ]
+                }
+            },
+            "Synergy": {
+                "pennies-synergy": {
+                    "type": "items",
+                    "values": [
+                        "repulsion-armor-plate",
+                        "roll-of-pennies"
+                    ]
+                },
+                "pennies-synergy-explanation": {
+                    "type": "text",
+                    "values": [
+                        "You can collect <span class='yellow text'>gold</span> easily by pairing <span class='white text'>Repulsion Armor Plate</span> with <span class='white text'>Roll of Pennies</span> and tanking shots from Lesser Wisps or burn damage from Fire Elites, this can be especially helpful during the early stages."
+                    ]
+                }
+            },
+            "Notes": {
+                "item-notes": {
+                    "type": "text",
+                    "values": [
+                        "Taking <span class='white text'>Repulsion Armor Plate</span> into the final boss fight results in Mithrix giving your items back out of order during Phase 4 of the boss fight <span class='blue-gray text'>(PC & console)</span>."
+                    ]
+                }
+            }
+        }
+    },
+    "mocha": {
+        "name": "Mocha",
+        "rarity": ["Common"],
+        "info": {
+            "Description": {
+                "item-description": {
+                    "type": "text",
+                    "values": [
+                        "Gain <span class='yellow text'>7.5%</span> <span class='blue-gray text'>(+7.5 per stack)</span> <span class='yellow text'>attack speed</span> and <span class='blue text'>7%</span> <span class='blue-gray text'>(+7% per stack)</span> <span class='blue text'>movement speed</span>."
+                    ]
+                }
+            },
+            "Strategy": {
+                "item-strategy": {
+                    "type": "text",
+                    "values": [
+                        "<span class='white text'>Mocha</span> is a good early-run substitution for true <span class='blue text'>movement speed</span> items like <span class='white text'>Paul's Goat Hoof</span> and <span class='white text'>Energy Drink</span>.",
+                        "Gathering high stacks of <span class='white text'>Mocha</span> can make certain skills or tech more difficult to use, such as Mercenary's Expose Transfer or Bandit's Special skills.",
+                        "Unless you're playing a survivor that relies on proc-chaining, it's usually better to trade <span class='white text'>Mocha</span> for <span class='white text'>Paul's Goat Hoof</span> or <span class='white text'>Energy Drink</span> as that can free up <span class='blue text'>50%-75%</span> of the items you were previously using for <span class='blue text'>movement speed</span>."
+                    ]
+                }
+            }
+        }
+    },
+    "topaz-brooch": {
+        "name": "Topaz Brooch",
+        "rarity": ["Common"],
+        "info": {
+            "Description": {
+                "item-description": {
+                    "type": "text",
+                    "values": [
+                        "Killing an enemy grants a <span class='green text'>temporary barrier</span> equal to <span class='green text'>15hp</span> <span class='blue-gray text'>(+15 per stack)</span>."
+                    ]
+                }
+            },
+            "Strategy": {
+                "item-strategy": {
+                    "type": "text",
+                    "values": [
+                        "Having a temporary barrier can be nice in a pinch but it isn't as useful as avoiding the damage entirely, or reducing the amount of incoming damage.",
+                        "<span class='white text'>Topaz Brooch</span> tends to lose it's value as your run continues and the enemies begin to hit harder or take longer to kill, you'd be better off investing your Common items into <span class='blue text'>movement speed</span> or <span class='green text'>armor</span> if possible."
+                    ]
+                }
+            },
+            "Synergy": {
+                "pennies-synergy": {
+                    "type": "items",
+                    "values": [
+                        "topaz-brooch",
+                        "forgive-me-please"
+                    ]
+                },
+                "pennies-synergy-explanation": {
+                    "type": "text",
+                    "values": [
+                        "<span class='white text'>Topaz Brooch</span> synergizes with <span class='equipment text'>Forgive Me Please</span>, which activates <span class='white text'>Topaz Brooch's</span> on-kill effect. This pairing isn't very useful on its own, but if you have a <span class='legendary text'>Soulbound Catalyst</span> you can maintain a permanent barrier for 100% of your health."
+                    ]
+                }
+            }
+        }
+    },
+    "tougher-times": {
+        "name": "Tougher Times",
+        "rarity": ["Common"]
+    },
+    "tri-tip-dagger": {
+        "name": "Tri-Tip Dagger",
+        "rarity": ["Common"]
+    },
+    "armor-piercing-rounds": {
+        "name": "Armor Piercing Rounds",
+        "rarity": ["Common"]
+    },
+    "lens-makers-glasses": {
+        "name": "Lens-Maker's Glasses",
+        "rarity": ["Common"]
+    },
+    "crowbar": {
+        "name": "Crowbar",
+        "rarity": ["Common"]
+    },
+    "bundle-of-fireworks": {
+        "name": "Bundle of Fireworks",
+        "rarity": ["Common"]
+    },
+    "bison-steak": {
+        "name": "Bison Steak",
+        "rarity": ["Common"]
+    },
+    "delicate-watch": {
+        "name": "Delicate Watch",
+        "rarity": ["Common"]
+    },
+    "roll-of-pennies": {
+        "name": "Roll of Pennies",
+        "rarity": ["Common"]
+    },
+    "cautious-slug": {
+        "name": "Cautious Slug",
+        "rarity": ["Common"]
+    },
+    "power-elixir": {
+        "name": "Power Elixir",
+        "rarity": ["Common"]
+    },
+    "pauls-goat-hoof": {
+        "name": "Paul's Goat Hoof",
+        "rarity": ["Common"]
+    },
+    "gasoline": {
+        "name": "Gasoline",
+        "rarity": ["Common"]
+    },
+    "medkit": {
+        "name": "Medkit",
+        "rarity": ["Common"]
+    },
+    "bustling-fungus": {
+        "name": "Bustling Fungus",
+        "rarity": ["Common"]
+    },
+    "focus-crystal": {
+        "name": "Focus Crystal",
+        "rarity": ["Common"]
+    },
+    "oddly-shaped-opal": {
+        "name": "Oddly-shaped Opal",
+        "rarity": ["Common"]
+    },
+    "personal-shield-generator": {
+        "name": "Personal Shield Generator",
+        "rarity": ["Common"]
+    },
+    "backup-magazine": {
+        "name": "Backup Magazine",
+        "rarity": ["Common"]
+    },
+    "energy-drink": {
+        "name": "Energy Drink",
+        "rarity": ["Common"]
+    },
+    "sticky-bomb": {
+        "name": "Sticky Bomb",
+        "rarity": ["Common"]
+    },
+    "stun-grenade": {
+        "name": "Stun Grenade",
+        "rarity": ["Common"]
+    },
+    "soldiers-syringe": {
+        "name": "Soldier's Syringe",
+        "rarity": ["Common"]
+    },
+    "monster-tooth": {
+        "name": "Monster Tooth",
+        "rarity": ["Common"]
+    },
+    "rusted-key": {
+        "name": "Rusted Key",
+        "rarity": ["Common"]
+    },
+    "warbanner": {
+        "name": "Warbanner",
+        "rarity": ["Common"]
+    },
+    "predatory-instincts": {
+        "name": "Predatory Instincts",
+        "rarity": ["Uncommon"]
+    },
+    "bandolier": {
+        "name": "Bandolier",
+        "rarity": ["Uncommon"]
+    },
+    "ghors-tome": {
+        "name": "Ghor's Tome",
+        "rarity": ["Uncommon"]
+    },
+    "ukulele": {
+        "name": "Ukulele",
+        "rarity": ["Uncommon"]
+    },
+    "death-mark": {
+        "name": "Death Mark",
+        "rarity": ["Uncommon"]
+    },
+    "war-horn": {
+        "name": "War Horn",
+        "rarity": ["Uncommon"]
+    },
+    "fuel-cell": {
+        "name": "Fuel Cell",
+        "rarity": ["Uncommon"]
+    },
+    "old-guillotine": {
+        "name": "Old Guillotine",
+        "rarity": ["Uncommon"]
+    },
+    "will-o-the-wisp": {
+        "name": "Will 'o the Wisp",
+        "rarity": ["Uncommon"]
+    },
+    "hopoo-feather": {
+        "name": "Hopoo Feather",
+        "rarity": ["Uncommon"]
+    },
+    "kjaros-band": {
+        "name": "Kjaro's Band",
+        "rarity": ["Uncommon"]
+    },
+    "shipping-request-form": {
+        "name": "Shipping Request Form",
+        "rarity": ["Uncommon"]
+    },
+    "harvesters-scythe": {
+        "name": "Harvester's Scythe",
+        "rarity": ["Uncommon"]
+    },
+    "runalds-band": {
+        "name": "Runald's Band",
+        "rarity": ["Uncommon"]
+    },
+    "infusion": {
+        "name": "Infusion",
+        "rarity": ["Uncommon"]
+    },
+    "wax-quail": {
+        "name": "Wax Quail",
+        "rarity": ["Uncommon"]
+    },
+    "atg-missile-mk1": {
+        "name": "ATG Missile Mk.1",
+        "rarity": ["Uncommon"]
+    },
+    "hunters-harpoon": {
+        "name": "Hunter's Harpoon",
+        "rarity": ["Uncommon"]
+    },
+    "old-war-stealthkit": {
+        "name": "Old War Stealthkit",
+        "rarity": ["Uncommon"]
+    },
+    "shuriken": {
+        "name": "Shuriken",
+        "rarity": ["Uncommon"]
+    },
+    "leeching-seed": {
+        "name": "Leeching Seed",
+        "rarity": ["Uncommon"]
+    },
+    "chronobauble": {
+        "name": "Chronobauble",
+        "rarity": ["Uncommon"]
+    },
+    "rose-buckler": {
+        "name": "Rose Buckler",
+        "rarity": ["Uncommon"]
+    },
+    "red-whip": {
+        "name": "Red Whip",
+        "rarity": ["Uncommon"]
+    },
+    "squid-polyp": {
+        "name": "Squid Polyp",
+        "rarity": ["Uncommon"]
+    },
+    "ignition-tank": {
+        "name": "Ignition Tank",
+        "rarity": ["Uncommon"]
+    },
+    "lepton-daisy": {
+        "name": "Lepton Daisy",
+        "rarity": ["Uncommon"]
+    },
+    "razorwire": {
+        "name": "Razorwire",
+        "rarity": ["Uncommon"]
+    },
+    "berzerkers-pauldron": {
+        "name": "Berzerker's Pauldron",
+        "rarity": ["Uncommon"]
+    },
+    "alien-head": {
+        "name": "Alien Head",
+        "rarity": ["Legendary"]
+    },
+    "aegis": {
+        "name": "Aegis",
+        "rarity": ["Legendary"]
+    },
+    "brilliant-behemoth": {
+        "name": "Brilliant Behemoth",
+        "rarity": ["Legendary"]
+    },
+    "sentient-meat-hook": {
+        "name": "Sentient Meat Hook",
+        "rarity": ["Legendary"]
+    },
+    "defensive-microbots": {
+        "name": "Defensive Microbots",
+        "rarity": ["Legendary"]
+    },
+    "57-leaf-clover": {
+        "name": "57 Leaf Clover",
+        "rarity": ["Legendary"]
+    },
+    "laser-scope": {
+        "name": "Laser Scope",
+        "rarity": ["Legendary"]
+    },
+    "ceremonial-dagger": {
+        "name": "Ceremonial Dagger",
+        "rarity": ["Legendary"]
+    },
+    "spare-drone-parts": {
+        "name": "Spare Drone Parts",
+        "rarity": ["Legendary"]
+    },
+    "dios-best-friend": {
+        "name": "Dio's Best Friend",
+        "rarity": ["Legendary"]
+    },
+    "h3ad-5t-v2": {
+        "name": "H3AD-5T v2",
+        "rarity": ["Legendary"]
+    },
+    "happiest-mask": {
+        "name": "Happiest Mask",
+        "rarity": ["Legendary"]
+    },
+    "wake-of-vultures": {
+        "name": "Wake of Vultures",
+        "rarity": ["Legendary"]
+    },
+    "frost-relic": {
+        "name": "Frost Relic",
+        "rarity": ["Legendary"]
+    },
+    "bens-rain-coat": {
+        "name": "Ben's Rain Coat",
+        "rarity": ["Legendary"]
+    },
+    "rejuvination-rack": {
+        "name": "Rejuvination Rack",
+        "rarity": ["Legendary"]
+    },
+    "brainstalks": {
+        "name": "Brainstalks",
+        "rarity": ["Legendary"]
+    },
+    "resonance-disc": {
+        "name": "Resonance Disc",
+        "rarity": ["Legendary"]
+    },
+    "pocket-icbm": {
+        "name": "Pocket I.C.B.M.",
+        "rarity": ["Legendary"]
+    },
+    "nkuhanas-opinion": {
+        "name": "N'kuhana's Opinion",
+        "rarity": ["Legendary"]
+    },
+    "symbiotic-scorpion": {
+        "name": "Symbiotic Scorpion",
+        "rarity": ["Legendary"]
+    },
+    "interstellar-desk-plant": {
+        "name": "Interstellar Desk Plant",
+        "rarity": ["Legendary"]
+    },
+    "bottled-chaos": {
+        "name": "Bottled Chaos",
+        "rarity": ["Legendary"]
+    },
+    "unstable-tesla-coil": {
+        "name": "Unstable Tesla Coil",
+        "rarity": ["Legendary"]
+    },
+    "soulbound-catalyst": {
+        "name": "Soulbound Catalyst",
+        "rarity": ["Legendary"]
+    },
+    "hardlight-afterburner": {
+        "name": "Hardlight Afterburner",
+        "rarity": ["Legendary"]
+    },
+    "queens-gland": {
+        "name": "Queen's Gland",
+        "rarity": ["Boss"]
+    },
+    "shatterspleen": {
+        "name": "Shatterspleen",
+        "rarity": ["Boss"]
+    },
+    "molten-perforator": {
+        "name": "Molten Perforator",
+        "rarity": ["Boss"]
+    },
+    "titanic-knurl": {
+        "name": "Titanic Knurl",
+        "rarity": ["Boss"]
+    },
+    "charged-perforator": {
+        "name": "Charged Perforator",
+        "rarity": ["Boss"]
+    },
+    "defense-nucleus": {
+        "name": "Defense Nucleus",
+        "rarity": ["Boss"]
+    },
+    "genesis-loop": {
+        "name": "Genesis Loop",
+        "rarity": ["Boss"]
+    },
+    "planula": {
+        "name": "Planula",
+        "rarity": ["Boss"]
+    },
+    "pearl": {
+        "name": "Pearl",
+        "rarity": ["Boss", "Stage"]
+    },
+    "empathy-cores": {
+        "name": "Empathy Cores",
+        "rarity": ["Boss"]
+    },
+    "irradiant-pearl": {
+        "name": "Irradiant Pearl",
+        "rarity": ["Boss", "Stage"]
+    },
+    "mired-urn": {
+        "name": "Mired Urn",
+        "rarity": ["Boss"]
+    },
+    "safer-spaces": {
+        "name": "Safer Spaces",
+        "rarity": ["Void", "Common"]
+    },
+    "needletick": {
+        "name": "Needletick",
+        "rarity": ["Void", "Common"]
+    },
+    "lost-seers-lenses": {
+        "name": "Lost Seer's Lenses",
+        "rarity": ["Void", "Common"]
+    },
+    "weeping-fungus": {
+        "name": "Weeping Fungus",
+        "rarity": ["Void", "Common"]
+    },
+    "encrusted-key": {
+        "name": "Encrusted Key",
+        "rarity": ["Void", "Common"]
+    },
+    "polylute": {
+        "name": "Polylute",
+        "rarity": ["Void", "Uncommon"]
+    },
+    "singularity-band": {
+        "name": "Singularity Band",
+        "rarity": ["Void", "Uncommon"]
+    },
+    "lysate-cell": {
+        "name": "Lysate Cell",
+        "rarity": ["Void", "Uncommon"]
+    },
+    "voidsent-flame": {
+        "name": "Voidsent Flame",
+        "rarity": ["Void", "Uncommon"]
+    },
+    "plasma-shrimp": {
+        "name": "Plasma Shrimp",
+        "rarity": ["Void", "Uncommon"]
+    },
+    "tentabauble": {
+        "name": "Tentabauble",
+        "rarity": ["Void", "Uncommon"]
+    },
+    "benthic-bloom": {
+        "name": "Benthic Bloom",
+        "rarity": ["Void", "Legendary"]
+    },
+    "pluripotent-larva": {
+        "name": "Pluripotent Larva",
+        "rarity": ["Void", "Legendary"]
+    },
+    "newly-hatched-zoea": {
+        "name": "Newly Hatched Zoea",
+        "rarity": ["Void", "Boss"]
+    },
+    "gesture-of-the-drowned": {
+        "name": "Gesture of the Drowned",
+        "rarity": ["Lunar"]
+    },
+    "focused-convergence": {
+        "name": "Focused Convergence",
+        "rarity": ["Lunar"]
+    },
+    "brittle-crown": {
+        "name": "Brittle Crown",
+        "rarity": ["Lunar"]
+    },
+    "light-flux-pauldron": {
+        "name": "Light Flux Pauldron",
+        "rarity": ["Lunar"]
+    },
+    "stone-flux-pauldron": {
+        "name": "Stone Flux Pauldron",
+        "rarity": ["Lunar"]
+    },
+    "purity": {
+        "name": "Purity",
+        "rarity": ["Lunar"]
+    },
+    "shaped-glass": {
+        "name": "Shaped Glass",
+        "rarity": ["Lunar"]
+    },
+    "visions-of-heresy": {
+        "name": "Visions of Heresy",
+        "rarity": ["Lunar"]
+    },
+    "hooks-of-heresy": {
+        "name": "Hooks of Heresy",
+        "rarity": ["Lunar"]
+    },
+    "essence-of-heresy": {
+        "name": "Essence of Heresy",
+        "rarity": ["Lunar"]
+    },
+    "egocentricism": {
+        "name": "Egocentricism",
+        "rarity": ["Lunar"]
+    },
+    "beads-of-fealty": {
+        "name": "Beads of Fealty",
+        "rarity": ["Lunar"]
+    },
+    "strides-of-heresy": {
+        "name": "Strides of Heresy",
+        "rarity": ["Lunar"]
+    },
+    "defiant-gouge": {
+        "name": "Defiant Gouge",
+        "rarity": ["Lunar"]
+    },
+    "mercurial-rachis": {
+        "name": "Mercurial Rachis",
+        "rarity": ["Lunar"]
+    },
+    "eulogy-zero": {
+        "name": "Eulogy Zero",
+        "rarity": ["Lunar"]
+    },
+    "corpsebloom": {
+        "name": "Corpsebloom",
+        "rarity": ["Lunar"]
+    },
+    "transcendence": {
+        "name": "Transcendence",
+        "rarity": ["Lunar"]
+    },
+    "helfire-tincture": {
+        "name": "Helfire Tincture",
+        "rarity": ["Lunar", "Equipment"]
+    },
+    "effigy-of-grief": {
+        "name": "Effigy of Grief",
+        "rarity": ["Lunar", "Equipment"]
+    },
+    "glowing-meteorite": {
+        "name": "Glowing Meteorite",
+        "rarity": ["Lunar", "Equipment"]
+    },
+    "spinel-tonic": {
+        "name": "Spinel Tonic",
+        "rarity": ["Lunar", "Equipment"]
+    },
+    "preon-accumulator": {
+        "name": "Preon Accumulator",
+        "rarity": ["Equipment"]
+    },
+    "primordial-cube": {
+        "name": "Primordial Cube",
+        "rarity": ["Equipment"]
+    },
+    "trophy-hunters-tricorn": {
+        "name": "Trophy Hunter's Tricorn",
+        "rarity": ["Equipment"]
+    },
+    "blast-shower": {
+        "name": "Blast Shower",
+        "rarity": ["Equipment"]
+    },
+    "disposable-missile-launcher": {
+        "name": "Disposable Missile Launcher",
+        "rarity": ["Equipment"]
+    },
+    "ocular-hud": {
+        "name": "Ocular HUD",
+        "rarity": ["Equipment"]
+    },
+    "forgive-me-please": {
+        "name": "Forgive Me Please",
+        "rarity": ["Equipment"]
+    },
+    "the-backup": {
+        "name": "The Backup",
+        "rarity": ["Equipment"]
+    },
+    "volcanic-egg": {
+        "name": "Volcanic Egg",
+        "rarity": ["Equipment"]
+    },
+    "foreign-fruit": {
+        "name": "Foreign Fruit",
+        "rarity": ["Equipment"]
+    },
+    "jade-elephant": {
+        "name": "Jade Elephant",
+        "rarity": ["Equipment"]
+    },
+    "eccentric-vase": {
+        "name": "Eccentric Vase",
+        "rarity": ["Equipment"]
+    },
+    "the-crowdfunder": {
+        "name": "The Crowdfunder",
+        "rarity": ["Equipment"]
+    },
+    "goobo-jr": {
+        "name": "Goobo Jr.",
+        "rarity": ["Equipment"]
+    },
+    "milky-chrysalis": {
+        "name": "Milky Chrysalis",
+        "rarity": ["Equipment"]
+    },
+    "super-massive-leech": {
+        "name": "Super Massive Leech",
+        "rarity": ["Equipment"]
+    },
+    "royal-capacitor": {
+        "name": "Royal Capacitor",
+        "rarity": ["Equipment"]
+    },
+    "molotov-6-pack": {
+        "name": "Molotov 6-Pack",
+        "rarity": ["Equipment"]
+    },
+    "executive-card": {
+        "name": "Executive Card",
+        "rarity": ["Equipment"]
+    },
+    "gnarled-woodsprite": {
+        "name": "Gnarled Woodsprite",
+        "rarity": ["Equipment"]
+    },
+    "recycler": {
+        "name": "Recycler",
+        "rarity": ["Equipment"]
+    },
+    "sawmerang": {
+        "name": "Sawmerang",
+        "rarity": ["Equipment"]
+    },
+    "radar-scanner": {
+        "name": "Radar Scanner",
+        "rarity": ["Equipment"]
+    },
+    "gorags-opus": {
+        "name": "Gorag's Opus",
+        "rarity": ["Equipment"]
+    },
+    "fuel-array": {
+        "name": "Fuel Array",
+        "rarity": ["Equipment"]
+    },
+    "ifrits-distinction": {
+        "name": "Ifrit's Distinction",
+        "rarity": ["Elite", "Aspect"]
+    },
+    "his-reassurance": {
+        "name": "His Reassurance",
+        "rarity": ["Elite", "Aspect"]
+    },
+    "silence-between-two-strikes": {
+        "name": "Silence Between Two Strikes",
+        "rarity": ["Elite", "Aspect"]
+    },
+    "her-biting-embrace": {
+        "name": "Her Biting Embrace",
+        "rarity": ["Elite", "Aspect"]
+    },
+    "nkuhanas-retort": {
+        "name": "N'kuhana's Retort",
+        "rarity": ["Elite", "Aspect"]
+    },
+    "spectral-circlet": {
+        "name": "Spectral Circlet",
+        "rarity": ["Elite", "Aspect"]
+    },
+    "shared-design": {
+        "name": "Shared Design",
+        "rarity": ["Elite", "Aspect"]
+    }
+}
