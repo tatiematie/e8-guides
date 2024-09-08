@@ -84,6 +84,7 @@ const populateDisplay = (id) => {
                     newOutput.id = "output"
                     newOutput.readOnly = true
                     newOutput.value = child.defaultValue
+                    newOutput.tabIndex = -1
 
                     newOutputWrapper.appendChild(newOutput)
 
