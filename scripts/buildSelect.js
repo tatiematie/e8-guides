@@ -1,12 +1,17 @@
-import { setCookie } from "./cookieHandling.js"
+import { getCookie, setCookie } from "./cookieHandling.js"
 import resizeSelect from "./resizeSelect.js"
 import updateDisplay from "./updateDisplay.js"
 
 const buildSelect = () => {
+    const itemSelect = document.querySelector("#item-select")
+
     // loop through the items in the data file and create a new list item in the item selection list
     Object.entries(window.itemList).forEach(([id]) => {
         createNewButton(id)
     })
+
+    let currentItem = document.querySelector(`.item[title="[ ${window.itemList[getCookie("lastViewed")].name} ]"]`)
+        currentItem.classList.add("active")
 
     resizeSelect()
 }
@@ -26,6 +31,12 @@ const createNewButton = (id) => {
     newButton.classList.add("item")
     newButton.addEventListener("click", () => {
         setCookie("lastViewed", id, 7)
+
+        let previousItem = document.querySelector(".item.active")
+            previousItem.classList.remove("active")
+            
+        let currentItem = document.querySelector(`.item[title="[ ${window.itemList[getCookie("lastViewed")].name} ]"]`)
+            currentItem.classList.add("active")
 
         updateDisplay(id)
 
