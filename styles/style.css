@@ -94,7 +94,31 @@
 .item.equipment, .item.elite {
   background-image: url(../assets/images/treatments/equipment.png);
 }
-
+.item.active {
+  outline: 1px solid #f1e488;
+  outline-offset: -5px;
+}
+.item.active:before, .item.active:after {
+  background-color: #fcffc4;
+  content: "";
+  display: block;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%) rotate(45deg);
+}
+.item.active:after {
+  bottom: 0px;
+  height: 8px;
+  width: 8px;
+  z-index: 9;
+}
+.item.active:before {
+  border: 1px solid #74745b;
+  bottom: 1px;
+  height: 4px;
+  width: 4px;
+  z-index: 10;
+}
 .text.gray {
   color: #9a9897;
 }
@@ -200,11 +224,12 @@ body h2,
 body h3,
 body p,
 body span {
+  color: #fefefe;
   display: block;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2509803922);
+  white-space: break-word;
   width: -moz-fit-content;
   width: fit-content;
-  color: #fefefe;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
   body h2,
@@ -376,12 +401,12 @@ body::-webkit-scrollbar {
 #select #item-select li {
   line-height: 0.75em;
 }
-#select #item-select li button:hover {
-  cursor: pointer;
-}
-#select #item-select li:hover {
-  outline: 2px solid #f1e488;
-  outline-offset: 2px;
+@media (hover: hover) and (pointer: fine) {
+  #select #item-select li button:not(.active):hover {
+    cursor: pointer;
+    outline: 2px solid #f1e488;
+    outline-offset: 2px;
+  }
 }
 @media only screen and (max-width: 887px) {
   #select #item-select {
