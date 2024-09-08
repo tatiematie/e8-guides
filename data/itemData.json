@@ -116,7 +116,7 @@
                 "item-description": {
                     "type": "text",
                     "values": [
-                        ""
+                        "Gain a <span class='green text'>15%</span> <span class='blue-gray text'>(+15% per stack)</span> chance to <span class='green text'>block</span> incoming damage. <span class='blue text'>Unaffected by luck</span>. <span class='void text'>Corrupted by Safer Spaces</span>"
                     ]
                 }
             },
@@ -124,42 +124,30 @@
                 "item-strategy": {
                     "type": "text",
                     "values": [
-                        ""
+                        "<span class='white text'>Tougher Times</span> stacks <span class='blue text'>hyperbolically</span>, which means that each new stack you pick up grants less of a stacking bonus than the previous",
+                        "Due to <span class='white text'>Tougher Times'</span> diminishing returns, it isn't wise to invest too heavily unless you have no other defensive options",
+                        "After <span class='blue text'>6x</span>, <span class='white text'>Tougher Times</span> stop granting more than <span class='green text'>5%</span> stacking bonus. The best range for investment is somewhere between <span class='blue text'>5-7x</span> <span class='blue-gray text'>(42.86%-51.22%)</span>, though you only need <span class='blue text'>3x</span> to have a minimum <span class='green text'>30%</span> proc chance",
+                        "If the opportunity presents itself, <span class='white text'>Tougher Times</span> should be corrupted by <span class='void text'>Safer Spaces</span> as <span class='void text'>Safer Spaces</span> is a more reliable defensive option"
                     ]
                 }
             },
-            "Synergy": {
-                "pennies-synergy": {
-                    "type": "items",
-                    "values": [
-                        "repulsion-armor-plate",
-                        "roll-of-pennies"
-                    ]
-                },
-                "pennies-synergy-explanation": {
+            "Real Chance to Proc": {
+                "item-notes": {
                     "type": "text",
                     "values": [
-                        ""
+                        "<span class='white text'>Tougher Times</span> has a <span class='green text'>15%</span> proc chance, this <span class='green text'>15%</span> is put through this equation: <span class='blue text'>f(x) = (1 - 1 / 0.15x + 1)</span>, where <span class='blue text'>f(x)</span> is how many <span class='white text'>Tougher Times</span> you have. With <span class='blue text'>1x</span> <span class='white text'>Tougher Times</span>, the equation results in a real <span class='green text'>13.04%</span> proc chance"
                     ]
-                }
-            },
-            "Notes": {
+                },
                 "item-calc": {
                     "type": "calculator",
                     "mode": "hyperbolic",
                     "output": "chance",
                     "base": 0.15,
-                    "defaultValue": "13.04",
+                    "defaultValue": "13.04%",
                     "fields": [
                         "input"
                     ]
                 
-                },
-                "item-notes": {
-                    "type": "text",
-                    "values": [
-                        ""
-                    ]
                 }
             }
         }
