@@ -5,19 +5,17 @@ import resizeSelect from "./resizeSelect.js"
 import updateDisplay from "./updateDisplay.js"
 
 const loadPage = async () => {
-	window.itemSelect = document.querySelector("#item-select")
-
 	// define global variable to store the list of items and their data
 	window.itemList = await loadData("data/itemData.json"),
 		window.itemIDs = Object.keys(window.itemList)
-
-	// build/initialize the item selection list
-	buildSelect()
 
 	// set up the page according according to how the user's last viewed item, if available
 	if (!getCookie("lastViewed")) {
 		setCookie("lastViewed", window.itemIDs[0], 7)
 	}
+
+	// build/initialize the item selection list
+	buildSelect()
 
 	// update tab and page with data from cookies
 	updateDisplay(getCookie("lastViewed"))
